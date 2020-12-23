@@ -1,36 +1,47 @@
-hi! clear
+exe 'hi! clear'
 
 "let s:style = get(g:, "mooncolor", "dark")
 
 let s:palette = {}
 
+let s:palette.test = '#ff0000'
+
 let s:palette.bg = "#000000"
 let s:palette.comment = "#747474"
+let s:palette.column = "#222222"
+let s:palette.constant = '#DA3E35'
+
+let s:palette.blue = '#3789F8'
+let s:palette.purple = '#6733C9'
+let s:palette.lightpurple = '#814BE5'
+let s:palette.orange = '#EA853F'
+let s:palette.lightorange = '#F6E7C1'
+let s:palette.green = '#57BD4F'
+let s:palette.red = '#D22635'
+let s:palette.lightgray = "#747474"
+let s:palette.darkgray = '#222222'
 
 let s:font = {'b': 'bold', 'u': 'underline', 'uc': 'undercurl', 'iv': 'inverse', 'i': 'italic', 'so': 'standout', 'nc': 'nocombine', 'st': 'strikethrough' }
-"let s:font = { 'b': "bold" }
 
-exe 'hi Normal gui=' . s:font.so . ' guibg=' . s:palette.bg
 " hi! Normal guibg=#000000 guifg=#F6E7C1 guifg=#ECD66E
-"hi! Normal guibg=s:palette.bg
-hi! ColorColumn guibg=#222222
-hi! Comment guifg=#747474
-"hi! Constant guifg=#ECD66E
-hi! Constant guifg=#DA3E35
-hi! CursorColumn guibg=#ff0000 guifg=#ff0000
-hi! CursorLine guibg=#222222
-hi! Cursor guibg=#ff0000 guifg=#ff0000
-hi! CursorLineNr guibg=#222222 guifg=#F6E7C1
-hi! Delimiter guifg=#ff0000
-hi! DiffAdd guibg=#ff0000 guifg=#ff0000
-hi! Directory guibg=#222222 guifg=#F6E7C1
-hi! Error guibg=#cc3315 guifg=#F6E7C1
-hi! ErrorMsg guibg=#ff0000
-hi! WarningMsg guibg=#ff0000
-hi! Identifier guifg=#8A64E5
-hi! Statement guifg=#8A64E5 gui=bold,italic
-hi! Type guifg=#3789f8 gui=bold,italic
-hi! Special guifg=#3789f8 gui=bold,italic
+exe 'hi! Normal guibg=' s:palette.bg
+exe 'hi! ColorColumn guibg=' s:palette.column
+exe 'hi! Comment guifg=' s:palette.lightgray
+exe 'hi! Constant guifg=' s:palette.red
+exe 'hi! CursorColumn guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi! CursorLine guibg=' s:palette.darkgray
+exe 'hi! Cursor guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi! CursorLineNr guibg=' s:palette.bg 'guifg=' s:palette.blue
+exe 'hi! Delimiter guifg=' s:palette.purple 'gui=bold'
+exe 'hi! DiffAdd guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi! Directory guibg=' s:palette.darkgray 'guifg=' s:palette.lightorange
+exe 'hi! Error guibg=' s:palette.red 'guifg=' s:palette.lightorange
+exe 'hi! ErrorMsg guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi! WarningMsg guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi! Identifier guifg=' s:palette.blue
+exe 'hi! Statement guifg=' s:palette.purple 'gui=bold,italic'
+exe 'hi! Type guifg=' s:palette.purple 'gui=bold,italic'
+exe 'hi! Special guifg=' s:palette.purple 'gui=bold,italic'
 
 
 " Javascript
