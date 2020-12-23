@@ -1,7 +1,18 @@
 hi! clear
 
+"let s:style = get(g:, "mooncolor", "dark")
+
+let s:palette = {}
+
+let s:palette.bg = "#000000"
+let s:palette.comment = "#747474"
+
+let s:font = {'b': 'bold', 'u': 'underline', 'uc': 'undercurl', 'iv': 'inverse', 'i': 'italic', 'so': 'standout', 'nc': 'nocombine', 'st': 'strikethrough' }
+"let s:font = { 'b': "bold" }
+
+exe 'hi Normal gui=' . s:font.so . ' guibg=' . s:palette.bg
 " hi! Normal guibg=#000000 guifg=#F6E7C1 guifg=#ECD66E
-hi! Normal guibg=#000000
+"hi! Normal guibg=s:palette.bg
 hi! ColorColumn guibg=#222222
 hi! Comment guifg=#747474
 "hi! Constant guifg=#ECD66E
