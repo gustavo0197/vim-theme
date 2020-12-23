@@ -5,7 +5,7 @@ hi! Normal guibg=#000000
 hi! ColorColumn guibg=#222222
 hi! Comment guifg=#747474
 "hi! Constant guifg=#ECD66E
-hi! Constant guifg=#9B2A14
+hi! Constant guifg=#DA3E35
 hi! CursorColumn guibg=#ff0000 guifg=#ff0000
 hi! CursorLine guibg=#222222
 hi! Cursor guibg=#ff0000 guifg=#ff0000
@@ -16,10 +16,11 @@ hi! Directory guibg=#222222 guifg=#F6E7C1
 hi! Error guibg=#cc3315 guifg=#F6E7C1
 hi! ErrorMsg guibg=#ff0000
 hi! WarningMsg guibg=#ff0000
-hi! Identifier guifg=#5856AD
-hi! Statement guifg=#5856AD gui=bold,italic
-hi! Type guifg=#008EA1 gui=bold,italic
-hi! Special guifg=#008EA1 gui=bold,italic
+hi! Identifier guifg=#8A64E5
+hi! Statement guifg=#8A64E5 gui=bold,italic
+hi! Type guifg=#3789f8 gui=bold,italic
+hi! Special guifg=#3789f8 gui=bold,italic
+
 
 " Javascript
 "javaScriptCommentTodo
@@ -34,31 +35,32 @@ hi javaScriptStringS guibg=#ff0000
 "javaScriptSpecialCharacter
 hi javaScriptNumber guifg=#9B2A14
 "javaScriptRegexpString
-hi javaScriptConditional guifg=#5856AD gui=bold,italic
-"javaScriptRepeat
-"javaScriptBranch
-"javaScriptOperator
+hi javaScriptConditional guifg=#3789F8 gui=bold,italic
+hi javaScriptRepeat guibg=#ff0000
+hi javaScriptBranch guifg=#4AB951 gui=bold
+hi javaScriptOperator guibg=#ff0000
 hi javaScriptType guibg=#ff0000
-hi javaScriptStatement guifg=#7674DE gui=bold,italic
-"javaScriptBoolean
-"javaScriptNull
-hi javaScriptIdentifier guifg=#5856AD gui=bold,italic
-hi javaScriptLabel guifg=#14A8BC gui=bold,italic
-"javaScriptException
-"javaScriptMessage
-"javaScriptGlobal
-"javaScriptMember
-"javaScriptDeprecated
-hi javaScriptReserved guifg=#5856AD gui=bold,italic
-hi javaScriptFunction guifg=#5856AD gui=bold,italic
-hi javaScriptBraces guifg=#14A8BC gui=bold
-"javaScriptParens
-"javaScriptCharacter
-"javaScriptValue
-"javaScriptError
-"javaScrParenError
-"javaScriptDebug
+hi javaScriptStatement guifg=#F0883E gui=bold,italic
+hi javaScriptBoolean guifg=#F0883E gui=bold
+hi javaScriptNull guifg=#DA3E35 gui=bold,italic
+hi javaScriptIdentifier guifg=#3789F8 gui=bold,italic
+hi javaScriptLabel guifg=#4AB951 gui=bold,italic
+hi javaScriptException guifg=#3789F8 gui=bold,italic
+hi javaScriptMessage guibg=#ff0000
+hi javaScriptGlobal guibg=#ff0000
+hi javaScriptMember guibg=#ff0000
+hi javaScriptDeprecated guibg=#ff0000
+hi javaScriptReserved guifg=#3789F8 gui=bold,italic
+hi javaScriptFunction guifg=#3789F8 gui=bold,italic
+hi javaScriptBraces guifg=#3789F8
+hi javaScriptParens guifg=#3789F8
+hi javaScriptCharacter guifg=#ff0000
+hi javaScriptValue guibg=#ff0000
+hi javaScriptError guibg=#ff0000
+hi javaScrParenError guibg=#ff0000
+hi javaScriptDebug guibg=#ff0000
 hi javascriptConstant guibg=#ff0000
+
 
 "Nerdtree
 hi NERDTreeOpenable guifg=#56AD9F
