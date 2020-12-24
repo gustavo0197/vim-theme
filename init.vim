@@ -11,7 +11,7 @@ let s:palette.comment = "#747474"
 let s:palette.column = "#222222"
 let s:palette.constant = '#DA3E35'
 
-let s:palette.blue = '#3789F8'
+let s:palette.blue = '#0071FE'
 let s:palette.purple = '#6733C9'
 let s:palette.lightpurple = '#814BE5'
 let s:palette.orange = '#EA853F'
