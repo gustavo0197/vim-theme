@@ -46,42 +46,42 @@ exe 'hi! Special guifg=' s:palette.purple 'gui=bold,italic'
 
 " Javascript
 "javaScriptCommentTodo
-hi javaScriptLineComment guifg=#747474
+exe 'hi! javaScriptLineComment guifg=' s:palette.lightgray
 "hi javaScriptCommentSkip guifg=#ff0000 guibg=#ff0000
-hi javaScriptComment guifg=#747474
-hi javaScriptSpecial guibg=#ff0000
-hi javaScriptStringD guifg=#9B2A14
-hi javaScriptStringS guibg=#ff0000
+exe 'hi javaScriptComment guifg=' s:palette.lightgray
+exe 'hi javaScriptSpecial guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi javaScriptStringD guifg=' s:palette.red
+exe 'hi javaScriptStringS guibg=' s:palette.test 'guifg=' s:palette.test
 "javaScriptEmbed
 "javaScriptStringT
 "javaScriptSpecialCharacter
-hi javaScriptNumber guifg=#9B2A14
+exe 'hi javaScriptNumber guifg=' s:palette.red
 "javaScriptRegexpString
-hi javaScriptConditional guifg=#3789F8 gui=bold,italic
-hi javaScriptRepeat guibg=#ff0000
-hi javaScriptBranch guifg=#4AB951 gui=bold
-hi javaScriptOperator guibg=#ff0000
-hi javaScriptType guibg=#ff0000
-hi javaScriptStatement guifg=#F0883E gui=bold,italic
-hi javaScriptBoolean guifg=#F0883E gui=bold
-hi javaScriptNull guifg=#DA3E35 gui=bold,italic
-hi javaScriptIdentifier guifg=#3789F8 gui=bold,italic
-hi javaScriptLabel guifg=#4AB951 gui=bold,italic
-hi javaScriptException guifg=#3789F8 gui=bold,italic
-hi javaScriptMessage guibg=#ff0000
-hi javaScriptGlobal guibg=#ff0000
-hi javaScriptMember guibg=#ff0000
-hi javaScriptDeprecated guibg=#ff0000
-hi javaScriptReserved guifg=#3789F8 gui=bold,italic
-hi javaScriptFunction guifg=#3789F8 gui=bold,italic
-hi javaScriptBraces guifg=#3789F8
-hi javaScriptParens guifg=#3789F8
-hi javaScriptCharacter guifg=#ff0000
-hi javaScriptValue guibg=#ff0000
-hi javaScriptError guibg=#ff0000
-hi javaScrParenError guibg=#ff0000
-hi javaScriptDebug guibg=#ff0000
-hi javascriptConstant guibg=#ff0000
+exe 'hi javaScriptConditional guifg=' s:palette.purple 'gui=bold,italic'
+exe 'hi javaScriptRepeat guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi javaScriptBranch guifg=' s:palette.green 'gui=bold'
+exe 'hi javaScriptOperator guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi javaScriptType guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi javaScriptStatement guifg=' s:palette.orange 'gui=bold,italic'
+exe 'hi javaScriptBoolean guifg=' s:palette.orange 'gui=bold'
+exe 'hi javaScriptNull guifg=' s:palette.red 'gui=bold,italic'
+exe 'hi javaScriptIdentifier guifg=' s:palette.blue 'gui=bold,italic'
+exe 'hi javaScriptLabel guifg=' s:palette.green 'gui=bold,italic'
+exe 'hi javaScriptException guifg=' s:palette.blue 'gui=bold,italic'
+exe 'hi javaScriptMessage guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi javaScriptGlobal guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi javaScriptMember guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi javaScriptDeprecated guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi javaScriptReserved guifg=' s:palette.blue 'gui=bold,italic'
+exe 'hi javaScriptFunction guifg=' s:palette.blue 'gui=bold,italic'
+exe 'hi javaScriptBraces guifg=' s:palette.blue
+exe 'hi javaScriptParens guifg=' s:palette.blue
+exe 'hi javaScriptCharacter guifg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi javaScriptValue guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi javaScriptError guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi javaScrParenError guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi javaScriptDebug guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi javascriptConstant guibg=' s:palette.test 'guifg=' s:palette.test
 
 
 "Nerdtree
