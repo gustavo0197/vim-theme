@@ -12,7 +12,7 @@ let s:palette.cerulean = "#4AB9B2"
 let s:palette.purple = '#6733C9'
 let s:palette.lightpurple = '#814BE5'
 let s:palette.orange = '#EA853F'
-let s:palette.lightorange = '#F6E7C1'
+let s:palette.light_orange = '#F6E7C1'
 let s:palette.dark_orange = "#D75F00"
 let s:palette.green = '#4AB951'
 let s:palette.red = '#D22635'
@@ -22,6 +22,7 @@ let s:palette.gray = "#555555"
 let s:palette.darkgray = '#222222'
 let s:palette.white = '#ffffff'
 let s:palette.yellow = '#CDBC6B'
+let s:palette.light_yellow = '#FFEE99'
 let s:palette.lightyellow = '#F6E7C1'
 let s:palette.pink = '#C86F5F'
 
@@ -41,8 +42,8 @@ exe 'hi! Delimiter guifg=' s:palette.purple 'gui=bold'
 exe 'hi! DiffAdd guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! DiffChange guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! DiffText guibg=' s:palette.test 'guifg=' s:palette.test
-exe 'hi! Directory guibg=' s:palette.darkgray 'guifg=' s:palette.lightorange
-exe 'hi! Error guibg=' s:palette.red 'guifg=' s:palette.lightorange
+exe 'hi! Directory guibg=' s:palette.darkgray 'guifg=' s:palette.light_orange
+exe 'hi! Error guibg=' s:palette.red 'guifg=' s:palette.light_orange
 exe 'hi! ErrorMsg guifg=' s:palette.red 'guibg=' s:palette.white 'gui=bold,inverse'
 exe 'hi! WarningMsg guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! Identifier guifg=' s:palette.blue
@@ -149,6 +150,7 @@ exe 'hi! typescriptParens guifg=' s:palette.purple 'gui=bold'
 exe 'hi! typescriptNumber guifg=' s:palette.blue
 
 " Airline
+" Tab
 exe 'hi! airline_tablabe guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! airline_tab guibg=' s:palette.lightgray
 exe 'hi! airline_tabsel guibg=' s:palette.purple 'guifg=' s:palette.white 'gui=bold'
@@ -164,12 +166,18 @@ exe 'hi! airline_tabmod_right guibg=' s:palette.red 'guifg=' s:palette.white 'gu
 exe 'hi! airline_tabhid_right guibg=' s:palette.test
 exe 'hi! airline_tabmod_unsel_right guibg=' s:palette.test
 
+" Git gutter
+exe 'hi! GitGutterAdd guifg=' s:palette.green 'gui=bold'
+exe 'hi! GitGutterChange guifg=' s:palette.blue 'gui=bold'
+exe 'hi! GitGutterDelete guifg=' s:palette.red 'gui=bold'
+exe 'hi! GitGutterChangeDelete guibg=' s:palette.test
+
 " NERDtree
 exe 'hi! NERDTreeOpenable guifg=' s:palette.blue
-exe 'hi! NERDTreeClosable guifg=' s:palette.blue
+exe 'hi! NERDTreeClosable guifg=' s:palette.red
 exe 'hi! NERDTreeUp guifg=' s:palette.green 'gui=bold,italic'
 exe 'hi! NERDTreeDir guifg=' s:palette.blue 'gui=bold'
-exe 'hi! NERDTreeFile guifg=' s:palette.dark_orange
+exe 'hi! NERDTreeFile guifg=' s:palette.green
 exe 'hi! NERDTreeDirSlash guifg=' s:palette.blue 'gui=bold'
 exe 'hi! NERDTreeIgnore guifg=' s:palette.blue 'gui=bold'
 exe 'hi! NERDTreeHelpKey guifg=' s:palette.purple 'gui=bold,italic'
@@ -186,7 +194,7 @@ exe 'hi! NERDTreeRO guibg=' s:palette.test
 exe 'hi! NERDTreeBookmark guibg=' s:palette.test
 exe 'hi! NERDTreeExecFile guibg=' s:palette.test
 exe 'hi! NERDTreeLink guibg=' s:palette.test
-exe 'hi! NERDTreeFlags guifg=' s:palette.yellow
+exe 'hi! NERDTreeFlags guifg=' s:palette.blue
 exe 'hi! NERDTreeCWD guifg=' s:palette.purple 'gui=bold,italic'
 exe 'hi! NERDTreeBookmarksLeader guibg=' s:palette.test
 exe 'hi! NERDTreeBookmarksHeader guibg=' s:palette.test
