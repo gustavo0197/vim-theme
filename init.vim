@@ -8,9 +8,8 @@ let s:palette.bg = "#000000"
 
 let s:palette.blue = '#0071FE'
 let s:palette.light_blue = '#3789F8'
-let s:palette.cerulean = "#4AB9B2"
 let s:palette.purple = '#6733C9'
-let s:palette.lightpurple = '#814BE5'
+let s:palette.light_purple = '#814BE5'
 let s:palette.orange = '#EA853F'
 let s:palette.light_orange = '#F6E7C1'
 let s:palette.dark_orange = "#D75F00"
@@ -23,8 +22,6 @@ let s:palette.darkgray = '#222222'
 let s:palette.white = '#ffffff'
 let s:palette.yellow = '#CDBC6B'
 let s:palette.light_yellow = '#FFEE99'
-let s:palette.lightyellow = '#F6E7C1'
-let s:palette.pink = '#C86F5F'
 
 " hi! Normal guibg=#000000 guifg=#F6E7C1 guifg=#ECD66E
 exe 'hi! Normal guibg=' s:palette.bg 'guifg=#d0d0d0'
@@ -87,7 +84,7 @@ exe 'hi! javaScriptBoolean guifg=' s:palette.dark_orange 'gui=bold,italic'
 exe 'hi! javaScriptNull guifg=' s:palette.red 'gui=bold,italic'
 exe 'hi! javaScriptIdentifier guifg=' s:palette.purple 'gui=bold,italic'
 exe 'hi! javaScriptLabel guifg=' s:palette.blue 'gui=bold,italic'
-exe 'hi! javaScriptException guifg=' s:palette.lightpurple 'gui=bold,italic'
+exe 'hi! javaScriptException guifg=' s:palette.light_purple 'gui=bold,italic'
 exe 'hi! javaScriptMessage guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! javaScriptGlobal guifg=' s:palette.purple 'gui=bold,italic'
 exe 'hi! javaScriptMember guibg=' s:palette.test 'guifg=' s:palette.test
@@ -149,8 +146,7 @@ exe 'hi! typescriptLabel guifg=' s:palette.dark_orange 'gui=bold,italic'
 exe 'hi! typescriptParens guifg=' s:palette.purple 'gui=bold'
 exe 'hi! typescriptNumber guifg=' s:palette.blue
 
-" Airline
-" Tab
+" Airline Tab
 exe 'hi! airline_tablabe guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! airline_tab guibg=' s:palette.lightgray
 exe 'hi! airline_tabsel guibg=' s:palette.purple 'guifg=' s:palette.white 'gui=bold'
@@ -170,14 +166,14 @@ exe 'hi! airline_tabmod_unsel_right guibg=' s:palette.test
 exe 'hi! GitGutterAdd guifg=' s:palette.green 'gui=bold'
 exe 'hi! GitGutterChange guifg=' s:palette.blue 'gui=bold'
 exe 'hi! GitGutterDelete guifg=' s:palette.red 'gui=bold'
-exe 'hi! GitGutterChangeDelete guibg=' s:palette.test
+exe 'hi! GitGutterChangeDelete guifg=' s:palette.dark_orange 'gui=bold'
 
 " NERDtree
 exe 'hi! NERDTreeOpenable guifg=' s:palette.blue
 exe 'hi! NERDTreeClosable guifg=' s:palette.red
 exe 'hi! NERDTreeUp guifg=' s:palette.green 'gui=bold,italic'
 exe 'hi! NERDTreeDir guifg=' s:palette.blue 'gui=bold'
-exe 'hi! NERDTreeFile guifg=' s:palette.green
+exe 'hi! NERDTreeFile guifg=' s:palette.lightgray
 exe 'hi! NERDTreeDirSlash guifg=' s:palette.blue 'gui=bold'
 exe 'hi! NERDTreeIgnore guifg=' s:palette.blue 'gui=bold'
 exe 'hi! NERDTreeHelpKey guifg=' s:palette.purple 'gui=bold,italic'
