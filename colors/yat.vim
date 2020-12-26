@@ -17,22 +17,22 @@ let s:palette.dark_orange = "#D75F00"
 let s:palette.green = '#4AB951'
 let s:palette.red = '#D22635'
 let s:palette.dark_red = '#870000'
-let s:palette.lightgray = "#747474"
+let s:palette.light_gray = "#747474"
 let s:palette.gray = "#555555"
-let s:palette.darkgray = '#222222'
+let s:palette.dark_gray = '#222222'
 let s:palette.white = '#ffffff'
 let s:palette.yellow = '#CDBC6B'
 let s:palette.light_yellow = '#FFEE99'
 
 " hi! Normal guibg=#000000 guifg=#F6E7C1 guifg=#ECD66E
 exe 'hi! Normal guibg=' s:palette.bg 'guifg=#d0d0d0'
-exe 'hi! Visual guibg=' s:palette.darkgray
+exe 'hi! Visual guibg=' s:palette.dark_gray
 exe 'hi! Conceal guibg=' s:palette.bg 'guifg=' s:palette.gray
-exe 'hi! ColorColumn guibg=' s:palette.darkgray
-exe 'hi! Comment guifg=' s:palette.lightgray
+exe 'hi! ColorColumn guibg=' s:palette.dark_gray
+exe 'hi! Comment guifg=' s:palette.light_gray
 exe 'hi! Constant guifg=' s:palette.red
 exe 'hi! CursorColumn guibg=' s:palette.test 'guifg=' s:palette.test
-exe 'hi! CursorLine guibg=' s:palette.darkgray
+exe 'hi! CursorLine guibg=' s:palette.dark_gray
 exe 'hi! Cursor guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! CursorLineNr guibg=' s:palette.bg 'guifg=' s:palette.blue
 exe 'hi! LineNr guibg=' s:palette.bg 'guifg=' s:palette.gray
@@ -40,7 +40,7 @@ exe 'hi! Delimiter guifg=' s:palette.purple 'gui=bold'
 exe 'hi! DiffAdd guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! DiffChange guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! DiffText guibg=' s:palette.test 'guifg=' s:palette.test
-exe 'hi! Directory guibg=' s:palette.darkgray 'guifg=' s:palette.light_orange
+exe 'hi! Directory guibg=' s:palette.dark_gray 'guifg=' s:palette.light_orange
 exe 'hi! Error guibg=' s:palette.red 'guifg=' s:palette.light_orange
 exe 'hi! ErrorMsg guifg=' s:palette.red 'guibg=' s:palette.white 'gui=bold,inverse'
 exe 'hi! WarningMsg guibg=' s:palette.test 'guifg=' s:palette.test
@@ -48,25 +48,26 @@ exe 'hi! Identifier guifg=' s:palette.blue
 exe 'hi! Statement guifg=' s:palette.purple 'gui=bold,italic'
 exe 'hi! Type guifg=' s:palette.purple 'gui=bold,italic'
 exe 'hi! Special guifg=' s:palette.purple 'gui=bold,italic'
-exe 'hi! Pmenu guibg=' s:palette.darkgray
-exe 'hi! PmenuSel guibg=' s:palette.lightgray 'guifg=' s:palette.white 'gui=bold'
-exe 'hi! PmenuSbar guibg=' s:palette.darkgray
-exe 'hi! PmenuThumb guibg=' s:palette.lightgray
+exe 'hi! Pmenu guibg=' s:palette.dark_gray
+exe 'hi! PmenuSel guibg=' s:palette.light_gray 'guifg=' s:palette.white 'gui=bold'
+exe 'hi! PmenuSbar guibg=' s:palette.dark_gray
+exe 'hi! PmenuThumb guibg=' s:palette.light_gray
 exe 'hi! VertSplit guibg=' s:palette.bg 'guifg=' s:palette.bg
-exe 'hi! Folded guibg=' s:palette.bg 'guifg=' s:palette.lightgray
+exe 'hi! Folded guibg=' s:palette.bg 'guifg=' s:palette.light_gray
 exe 'hi! FoldColumn guibg=' s:palette.test 'guifg=' s:palette.test
-exe 'hi! SignColumn guibg=' s:palette.darkgray
+exe 'hi! SignColumn guibg=' s:palette.dark_gray
 exe 'hi! Todo guibg=' s:palette.test
 exe 'hi! MatchParen guibg=' s:palette.bg  'guifg=' s:palette.white 'gui=underline'
 exe 'hi! Search guibg=' s:palette.blue 'guifg=' s:palette.white 'gui=bold'
+exe 'hi! EndOfBuffer guifg=' s:palette.dark_gray
 
 
 " Javascript
 syntax keyword javaScriptReserved from async console require await
 exe 'hi! javaScriptCommentTodo guibg=' s:palette.test 'guifg=' s:palette.test
-exe 'hi! javaScriptLineComment guifg=' s:palette.lightgray
+exe 'hi! javaScriptLineComment guifg=' s:palette.light_gray
 exe 'hi! javaScriptCommentSkip guibg=' s:palette.test 'guifg=' s:palette.test
-exe 'hi! javaScriptComment guifg=' s:palette.lightgray
+exe 'hi! javaScriptComment guifg=' s:palette.light_gray
 exe 'hi! javaScriptSpecial guifg=' s:palette.purple 'gui=bold'
 exe 'hi! javaScriptStringD guifg=' s:palette.red
 exe 'hi! javaScriptStringS guifg=' s:palette.red
@@ -149,13 +150,13 @@ exe 'hi! typescriptNumber guifg=' s:palette.blue
 
 " Airline Tab
 exe 'hi! airline_tablabe guibg=' s:palette.test 'guifg=' s:palette.test
-exe 'hi! airline_tab guibg=' s:palette.lightgray
+exe 'hi! airline_tab guibg=' s:palette.light_gray
 exe 'hi! airline_tabsel guibg=' s:palette.purple 'guifg=' s:palette.white 'gui=bold'
 exe 'hi! airline_tabtype guibg=' s:palette.test
 exe 'hi! airline_tabfill guibg=' s:palette.bg
 exe 'hi! airline_tabmod guibg=' s:palette.green 'guifg=' s:palette.white
 exe 'hi! airline_tabmod_unsel guibg=' s:palette.test
-exe 'hi! airline_tabhid guibg=' s:palette.lightgray 'guifg=' s:palette.white
+exe 'hi! airline_tabhid guibg=' s:palette.light_gray 'guifg=' s:palette.white
 exe 'hi! airline_tablabel_right guibg=' s:palette.green 'guifg=' s:palette.white 'gui=bold'
 exe 'hi! airline_tab_right guibg=' s:palette.purple 'guifg=' s:palette.white 'gui=bold'
 exe 'hi! airline_tabsel_right guibg=' s:palette.purple 'guifg=' s:palette.white 'gui=bold'
@@ -174,7 +175,7 @@ exe 'hi! NERDTreeOpenable guifg=' s:palette.blue
 exe 'hi! NERDTreeClosable guifg=' s:palette.red
 exe 'hi! NERDTreeUp guifg=' s:palette.green 'gui=bold,italic'
 exe 'hi! NERDTreeDir guifg=' s:palette.blue 'gui=bold'
-exe 'hi! NERDTreeFile guifg=' s:palette.lightgray
+exe 'hi! NERDTreeFile guifg=' s:palette.light_gray
 exe 'hi! NERDTreeDirSlash guifg=' s:palette.blue 'gui=bold'
 exe 'hi! NERDTreeIgnore guifg=' s:palette.blue 'gui=bold'
 exe 'hi! NERDTreeHelpKey guifg=' s:palette.purple 'gui=bold,italic'
@@ -203,7 +204,7 @@ exe 'hi! NERDTreeGitStatusUnmerged guifg=' s:palette.red
 exe 'hi! NERDTreeGitStatusModified guifg=' s:palette.green
 exe 'hi! NERDTreeGitStatusStaged guibg=' s:palette.test
 exe 'hi! NERDTreeGitStatusRenamed guibg=' s:palette.test
-exe 'hi! NERDTreeGitStatusUntracked guifg=' s:palette.orange
+exe 'hi! NERDTreeGitStatusUntracked guifg=' s:palette.red
 exe 'hi! NERDTreeGitStatusDirty guifg=' s:palette.red
 exe 'hi! NERDTreeGitStatusDeleted guibg=' s:palette.test
 exe 'hi! NERDTreeGitStatusIgnored guibg=' s:palette.test
