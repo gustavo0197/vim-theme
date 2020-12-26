@@ -1,5 +1,6 @@
 exe 'hi! clear'
 
+let s:style = get(g:, 'vim-theme')
 let s:palette = {}
 
 let s:palette.test = '#ff0000'
