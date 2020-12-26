@@ -24,7 +24,6 @@ let s:palette.white = '#ffffff'
 let s:palette.yellow = '#CDBC6B'
 let s:palette.light_yellow = '#FFEE99'
 
-" hi! Normal guibg=#000000 guifg=#F6E7C1 guifg=#ECD66E
 exe 'hi! Normal guibg=' s:palette.bg 'guifg=#d0d0d0'
 exe 'hi! Visual guibg=' s:palette.dark_gray
 exe 'hi! Conceal guibg=' s:palette.bg 'guifg=' s:palette.gray
@@ -60,7 +59,6 @@ exe 'hi! Todo guibg=' s:palette.test
 exe 'hi! MatchParen guibg=' s:palette.bg  'guifg=' s:palette.white 'gui=underline'
 exe 'hi! Search guibg=' s:palette.blue 'guifg=' s:palette.white 'gui=bold'
 exe 'hi! EndOfBuffer guifg=' s:palette.dark_gray
-
 
 " Javascript
 syntax keyword javaScriptReserved from async console require await
@@ -147,22 +145,6 @@ exe 'hi! typescriptReserved guifg=' s:palette.purple 'gui=bold,italic'
 exe 'hi! typescriptLabel guifg=' s:palette.dark_orange 'gui=bold,italic'
 exe 'hi! typescriptParens guifg=' s:palette.purple 'gui=bold'
 exe 'hi! typescriptNumber guifg=' s:palette.blue
-
-" Airline Tab
-exe 'hi! airline_tablabe guibg=' s:palette.test 'guifg=' s:palette.test
-exe 'hi! airline_tab guibg=' s:palette.light_gray
-exe 'hi! airline_tabsel guibg=' s:palette.purple 'guifg=' s:palette.white 'gui=bold'
-exe 'hi! airline_tabtype guibg=' s:palette.test
-exe 'hi! airline_tabfill guibg=' s:palette.bg
-exe 'hi! airline_tabmod guibg=' s:palette.green 'guifg=' s:palette.white
-exe 'hi! airline_tabmod_unsel guibg=' s:palette.test
-exe 'hi! airline_tabhid guibg=' s:palette.light_gray 'guifg=' s:palette.white
-exe 'hi! airline_tablabel_right guibg=' s:palette.green 'guifg=' s:palette.white 'gui=bold'
-exe 'hi! airline_tab_right guibg=' s:palette.purple 'guifg=' s:palette.white 'gui=bold'
-exe 'hi! airline_tabsel_right guibg=' s:palette.purple 'guifg=' s:palette.white 'gui=bold'
-exe 'hi! airline_tabmod_right guibg=' s:palette.red 'guifg=' s:palette.white 'gui=bold'
-exe 'hi! airline_tabhid_right guibg=' s:palette.test
-exe 'hi! airline_tabmod_unsel_right guibg=' s:palette.test
 
 " Git gutter
 exe 'hi! GitGutterAdd guifg=' s:palette.green 'gui=bold'
