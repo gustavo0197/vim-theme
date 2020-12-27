@@ -55,7 +55,6 @@ exe 'hi! VertSplit guibg=' s:palette.bg 'guifg=' s:palette.bg
 exe 'hi! Folded guibg=' s:palette.bg 'guifg=' s:palette.light_gray
 exe 'hi! FoldColumn guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! SignColumn guibg=' s:palette.dark_gray
-exe 'hi! Todo guibg=' s:palette.test
 exe 'hi! MatchParen guibg=' s:palette.bg  'guifg=' s:palette.white 'gui=underline'
 exe 'hi! Search guibg=' s:palette.blue 'guifg=' s:palette.white 'gui=bold'
 exe 'hi! EndOfBuffer guifg=' s:palette.dark_gray
@@ -146,6 +145,35 @@ exe 'hi! typescriptLabel guifg=' s:palette.dark_orange 'gui=bold,italic'
 exe 'hi! typescriptParens guifg=' s:palette.purple 'gui=bold'
 exe 'hi! typescriptNumber guifg=' s:palette.blue
 
+" HTML
+exe 'hi! htmlError guibg=' s:palette.test
+exe 'hi! htmlString guifg=' s:palette.red
+exe 'hi! htmlValue guibg=' s:palette.test
+exe 'hi! htmlTagN guifg=' s:palette.dark_orange
+exe 'hi! htmlTagError guibg=' s:palette.red  'guifg=' s:palette.white 'gui=underline'
+exe 'hi! htmlTagName guifg=' s:palette.blue 'gui=bold,italic'
+"exe 'hi! htmlTitle guibg=' s:palette.test
+exe 'hi! htmlTag guifg=' s:palette.blue
+exe 'hi! htmlEndTag guifg=' s:palette.blue
+exe 'hi! htmlArg guifg=' s:palette.green
+exe 'hi! htmlEvent guifg=' s:palette.blue
+exe 'hi! htmlLink guifg=' s:palette.blue 'gui=underline'
+exe 'hi! htmlBoldUnderline gui=bold,underline'
+exe 'hi! htmlBoldItalic gui=bold,italic'
+exe 'hi! htmlBold gui=bold'
+exe 'hi! htmlBoldUnderlineItalic gui=bold,underline,italic'
+exe 'hi! link htmlBoldItalicUnderline htmlBoldUnderlineItalic'
+exe 'hi! link htmlUnderlineBold htmlBoldUnderline'
+exe 'hi! htmlUnderlineItalic gui=underline,italic'
+exe 'hi! htmlUnderline gui=underline'
+exe 'hi! link htmlUnderlineBoldItalic htmlBoldUnderlineItalic'
+exe 'hi! link htmlUnderlineItalicBold htmlBoldUnderlineItalic'
+exe 'hi! link htmlItalicBold htmlBoldItalic'
+exe 'hi! link htmlItalicUnderline htmlUnderlineItalic'
+exe 'hi! htmlItalic gui=italic'
+exe 'hi! link htmlItalicBoldUnderline htmlBoldUnderlineItalic'
+exe 'hi! link htmlItalicUnderlineBold htmlBoldUnderlineItalic'
+
 " Git gutter
 exe 'hi! GitGutterAdd guifg=' s:palette.green 'gui=bold'
 exe 'hi! GitGutterChange guifg=' s:palette.blue 'gui=bold'
@@ -191,10 +219,3 @@ exe 'hi! NERDTreeGitStatusDirty guifg=' s:palette.red
 exe 'hi! NERDTreeGitStatusDeleted guibg=' s:palette.test
 exe 'hi! NERDTreeGitStatusIgnored guibg=' s:palette.test
 exe 'hi! NERDTreeGitStatusClean guibg=' s:palette.test
-
-" Indent
-
-
-"bold underline undercurl                                                        
-"inverse italic standout
-"nocombine strikethrough
