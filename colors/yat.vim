@@ -18,13 +18,14 @@ let s:palette.green = '#4AB951'
 let s:palette.red = '#D22635'
 let s:palette.dark_red = '#870000'
 let s:palette.light_gray = "#747474"
+let s:palette.light_gray_2 = '#d0d0d0'
 let s:palette.gray = "#555555"
 let s:palette.dark_gray = '#222222'
 let s:palette.white = '#ffffff'
 let s:palette.yellow = '#CDBC6B'
 let s:palette.light_yellow = '#FFEE99'
 
-exe 'hi! Normal guibg=' s:palette.bg 'guifg=#d0d0d0'
+exe 'hi! Normal guibg=' s:palette.bg 'guifg=' s:palette.light_gray_2
 exe 'hi! Visual guibg=' s:palette.dark_gray
 exe 'hi! Conceal guibg=' s:palette.bg 'guifg=' s:palette.gray
 exe 'hi! ColorColumn guibg=' s:palette.dark_gray
@@ -152,13 +153,13 @@ exe 'hi! htmlValue guibg=' s:palette.test
 exe 'hi! htmlTagN guifg=' s:palette.dark_orange
 exe 'hi! htmlTagError guibg=' s:palette.red  'guifg=' s:palette.white 'gui=underline'
 exe 'hi! htmlTagName guifg=' s:palette.blue 'gui=bold,italic'
-exe 'hi! htmlTitle guifg=' s:palette.white 'gui=bold'
+exe 'hi! htmlTitle guifg=' s:palette.light_gray_2 'gui=bold'
 exe 'hi! link htmlH1 htmlTitle'
 exe 'hi! htmlTag guifg=' s:palette.blue
 exe 'hi! htmlEndTag guifg=' s:palette.blue
 exe 'hi! htmlArg guifg=' s:palette.green
 exe 'hi! htmlEvent guifg=' s:palette.blue
-exe 'hi! htmlLink guifg=' s:palette.blue 'gui=underline'
+exe 'hi! htmlLink guifg=' s:palette.light_gray_2 'gui=underline'
 exe 'hi! htmlBoldUnderline gui=bold,underline'
 exe 'hi! htmlBoldItalic gui=bold,italic'
 exe 'hi! htmlBold gui=bold'
