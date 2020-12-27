@@ -153,6 +153,7 @@ exe 'hi! htmlTagN guifg=' s:palette.dark_orange
 exe 'hi! htmlTagError guibg=' s:palette.red  'guifg=' s:palette.white 'gui=underline'
 exe 'hi! htmlTagName guifg=' s:palette.blue 'gui=bold,italic'
 "exe 'hi! htmlTitle guibg=' s:palette.test
+exe 'hi! htmlH1 guifg=' s:palette.white 'gui=bold'
 exe 'hi! htmlTag guifg=' s:palette.blue
 exe 'hi! htmlEndTag guifg=' s:palette.blue
 exe 'hi! htmlArg guifg=' s:palette.green
