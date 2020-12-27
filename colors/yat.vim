@@ -8,13 +8,14 @@ let s:palette.test = '#ff0000'
 let s:palette.bg = "#000000"
 
 let s:palette.blue = '#0071FE'
-let s:palette.light_blue = '#3789F8'
 let s:palette.purple = '#6733C9'
 let s:palette.light_purple = '#814BE5'
 let s:palette.orange = '#EA853F'
 let s:palette.light_orange = '#F6E7C1'
 let s:palette.dark_orange = "#D75F00"
+let s:palette.light_green = '#28A6A4'
 let s:palette.green = '#4AB951'
+let s:palette.dark_green = '#23881B'
 let s:palette.red = '#D22635'
 let s:palette.dark_red = '#870000'
 let s:palette.light_gray = "#747474"
@@ -24,6 +25,7 @@ let s:palette.dark_gray = '#222222'
 let s:palette.white = '#ffffff'
 let s:palette.yellow = '#CDBC6B'
 let s:palette.light_yellow = '#FFEE99'
+let s:palette.pink = '#F560F0'
 
 exe 'hi! Normal guibg=' s:palette.bg 'guifg=' s:palette.light_gray_2
 exe 'hi! Visual guibg=' s:palette.dark_gray
@@ -148,17 +150,17 @@ exe 'hi! typescriptNumber guifg=' s:palette.blue
 
 " HTML
 exe 'hi! htmlError guibg=' s:palette.test
-exe 'hi! htmlString guifg=' s:palette.red
+exe 'hi! htmlString guifg=' s:palette.light_green
 exe 'hi! htmlValue guibg=' s:palette.test
 exe 'hi! htmlTagN guifg=' s:palette.dark_orange
 exe 'hi! htmlTagError guibg=' s:palette.red  'guifg=' s:palette.white 'gui=underline'
-exe 'hi! htmlTagName guifg=' s:palette.blue 'gui=bold,italic'
 exe 'hi! htmlTitle guifg=' s:palette.light_gray_2 'gui=bold'
 exe 'hi! link htmlH1 htmlTitle'
-exe 'hi! htmlTag guifg=' s:palette.blue
-exe 'hi! htmlEndTag guifg=' s:palette.blue
-exe 'hi! htmlArg guifg=' s:palette.green
-exe 'hi! htmlEvent guifg=' s:palette.blue
+exe 'hi! htmlTagName guifg=' s:palette.red 'gui=bold,italic'
+exe 'hi! htmlTag guifg=' s:palette.red
+exe 'hi! htmlEndTag guifg=' s:palette.red
+exe 'hi! htmlArg guifg=' s:palette.dark_green 'gui=bold'
+exe 'hi! htmlEvent guifg=' s:palette.dark_orange
 exe 'hi! htmlLink guifg=' s:palette.light_gray_2 'gui=underline'
 exe 'hi! htmlBoldUnderline gui=bold,underline'
 exe 'hi! htmlBoldItalic gui=bold,italic'
