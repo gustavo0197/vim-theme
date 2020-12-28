@@ -104,42 +104,42 @@ exe 'hi! javascriptConstant guibg=' s:palette.test 'guifg=' s:palette.test
 
 " TSX
 syntax keyword ReduxHooksKeywords useRef useContext useReducer useSelector useDispatch useNavigate useParams
-exe 'hi! tsxTagName guifg=' s:palette.dark_orange 'gui=bold,italic'
 exe 'hi! tsxIntrinsicTagName guibg=' s:palette.test
-exe 'hi! tsxAttrib guifg=' s:palette.purple 'gui=bold,italic'
+exe 'hi! tsxAttrib guifg=' s:palette.dark_green 'gui=bold,italic'
 exe 'hi! tsxEscJs guibg=' s:palette.test
 exe 'hi! tsxCloseString guibg=' s:palette.test
-exe 'hi! tsxTag guifg=' s:palette.dark_orange
-exe 'hi! tsxCloseTag guifg=' s:palette.dark_orange
+exe 'hi! tsxTagName guifg=' s:palette.red 'gui=bold,italic'
+exe 'hi! tsxTag guifg=' s:palette.red
+exe 'hi! tsxCloseTag guifg=' s:palette.red
+exe 'hi! tsxComponentName guifg=' s:palette.blue 'gui=bold,italic'
+exe 'hi! tsxCloseComponentName guifg=' s:palette.blue 'gui=bold,italic'
+exe 'hi! tsxCloseTagName guifg=' s:palette.red 'gui=bold,italic'
 exe 'hi! tsxCommentInvalid guibg=' s:palette.test
 exe 'hi! tsxFragment guibg=' s:palette.test
 exe 'hi! tsxBlockComment guibg=' s:palette.test
 exe 'hi! tsxLineComment guibg=' s:palette.test
 exe 'hi! tsxEntityPunct guibg=' s:palette.test
 exe 'hi! tsxEntity guibg=' s:palette.test
-exe 'hi! tsxEqual guifg=' s:palette.purple 'gui=bold'
-exe 'hi! tsxString guifg=' s:palette.green
+exe 'hi! tsxEqual guifg=' s:palette.red 'gui=bold'
+exe 'hi! tsxString guifg=' s:palette.dark_orange
 exe 'hi! tsxComment guibg=' s:palette.test
 exe 'hi! tsxColon guibg=' s:palette.test
 exe 'hi! tsxIfOperator guifg=' s:palette.purple 'gui=bold'
 exe 'hi! tsxElseOperator guifg=' s:palette.purple 'gui=bold'
-exe 'hi! tsxAttributeBraces guifg=' s:palette.purple 'gui=bold'
+exe 'hi! tsxAttributeBraces guifg=' s:palette.red 'gui=bold'
 exe 'hi! tsxJsBlock guifg=' s:palette.dark_orange
 exe 'hi! tsxAttributeComment guibg=' s:palette.test
 exe 'hi! tsxGenerics guibg=' s:palette.test
 exe 'hi! tsxTypeBraces guibg=' s:palette.test
-exe 'hi! tsxTypes guibg=' s:palette.test
-exe 'hi! tsGenerics guibg=' s:palette.test
-exe 'hi! tsxComponentName guifg=' s:palette.red 'gui=bold,italic'
-exe 'hi! tsxCloseComponentName guifg=' s:palette.red 'gui=bold,italic'
-exe 'hi! tsxCloseTagName guifg=' s:palette.dark_orange 'gui=bold,italic'
+exe 'hi! tsxTypes guifg=' s:palette.dark_orange 'gui=bold'
+exe 'hi! tsGenerics guifg=' s:palette.red
 exe 'hi! tsxAttribPunct guibg=' s:palette.test
 exe 'hi! tsxAttribHook guibg=' s:palette.test
 exe 'hi! tsxNotOperator guifg=' s:palette.red 'gui=bold'
 exe 'hi! tsxRegionEnd guibg=' s:palette.test
-exe 'hi! ReactLifeCycleMethods guifg=' s:palette.green 'gui=bold,italic'
+exe 'hi! ReactLifeCycleMethods guifg=' s:palette.dark_green 'gui=bold,italic'
 exe 'hi! ReduxKeywords guibg=' s:palette.test
-exe 'hi! ReduxHooksKeywords guifg=' s:palette.green 'gui=bold,italic'
+exe 'hi! ReduxHooksKeywords guifg=' s:palette.dark_green 'gui=bold,italic'
 
 " Typescript
 exe 'hi! typescriptBraces guifg=' s:palette.purple 'gui=bold'
@@ -150,7 +150,7 @@ exe 'hi! typescriptNumber guifg=' s:palette.blue
 
 " HTML
 exe 'hi! htmlError guibg=' s:palette.test
-exe 'hi! htmlString guifg=' s:palette.light_green
+exe 'hi! htmlString guifg=' s:palette.dark_orange
 exe 'hi! htmlValue guibg=' s:palette.test
 exe 'hi! htmlTagN guifg=' s:palette.dark_orange
 exe 'hi! htmlTagError guibg=' s:palette.red  'guifg=' s:palette.white 'gui=underline'
@@ -159,9 +159,10 @@ exe 'hi! link htmlH1 htmlTitle'
 exe 'hi! htmlTagName guifg=' s:palette.red 'gui=bold,italic'
 exe 'hi! htmlTag guifg=' s:palette.red
 exe 'hi! htmlEndTag guifg=' s:palette.red
-exe 'hi! htmlArg guifg=' s:palette.dark_green 'gui=bold'
+exe 'hi! htmlArg guifg=' s:palette.dark_green 'gui=bold,italic'
 exe 'hi! htmlEvent guifg=' s:palette.dark_orange
 exe 'hi! htmlLink guifg=' s:palette.light_gray_2 'gui=underline'
+exe 'hi! htmlSpecialTagName guifg=' s:palette.blue 'gui=bold,italic'
 exe 'hi! htmlBoldUnderline gui=bold,underline'
 exe 'hi! htmlBoldItalic gui=bold,italic'
 exe 'hi! htmlBold gui=bold'
@@ -204,7 +205,7 @@ exe 'hi! NERDTreeLinkDir guibg=' s:palette.test
 exe 'hi! NERDTreeNodeDelimiters guibg=' s:palette.test
 exe 'hi! NERDTreeRO guibg=' s:palette.test
 exe 'hi! NERDTreeBookmark guibg=' s:palette.test
-exe 'hi! NERDTreeExecFile guibg=' s:palette.test
+exe 'hi! NERDTreeExecFile guifg=' s:palette.dark_green 'gui=bold'
 exe 'hi! NERDTreeLink guibg=' s:palette.test
 exe 'hi! NERDTreeFlags guifg=' s:palette.blue
 exe 'hi! NERDTreeCWD guifg=' s:palette.purple 'gui=bold,italic'
