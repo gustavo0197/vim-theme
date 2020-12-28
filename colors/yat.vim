@@ -188,39 +188,39 @@ exe 'hi! GitGutterChangeDelete guifg=' s:palette.dark_orange 'gui=bold'
 " NERDtree
 exe 'hi! NERDTreeOpenable guifg=' s:palette.blue
 exe 'hi! NERDTreeClosable guifg=' s:palette.red
-exe 'hi! NERDTreeUp guifg=' s:palette.green 'gui=bold,italic'
+exe 'hi! NERDTreeUp guifg=' s:palette.dark_green 'gui=bold,italic'
 exe 'hi! NERDTreeDir guifg=' s:palette.blue 'gui=bold'
-exe 'hi! NERDTreeFile guifg=' s:palette.light_gray
-exe 'hi! NERDTreeDirSlash guifg=' s:palette.blue 'gui=bold'
+exe 'hi! NERDTreeFile guifg=' s:palette.light_gray_2
+exe 'hi! NERDTreeDirSlash guifg=' s:palette.light_gray_2 'gui=bold'
 exe 'hi! NERDTreeIgnore guifg=' s:palette.blue 'gui=bold'
 exe 'hi! NERDTreeHelpKey guifg=' s:palette.purple 'gui=bold,italic'
-exe 'hi! NERDTreeHelpTitle guifg=' s:palette.blue 'gui=bold,italic'
-exe 'hi! NERDTreeToggleOn guifg=' s:palette.orange 'gui=bold'
-exe 'hi! NERDTreeToggleOff guifg=' s:palette.orange 'gui=bold'
+exe 'hi! NERDTreeHelpTitle guifg=' s:palette.dark_green 'gui=bold,italic'
+exe 'hi! NERDTreeToggleOn guifg=' s:palette.dark_orange 'gui=bold'
+exe 'hi! NERDTreeToggleOff guifg=' s:palette.dark_orange 'gui=bold'
 exe 'hi! NERDTreeHelpCommand guifg=' s:palette.green
 exe 'hi! NERDTreeHelp guifg=' s:palette.blue
-exe 'hi! NERDTreeLinkTarget guibg=' s:palette.test
-exe 'hi! NERDTreeLinkFile guibg=' s:palette.test
-exe 'hi! NERDTreeLinkDir guibg=' s:palette.test
-exe 'hi! NERDTreeNodeDelimiters guibg=' s:palette.test
-exe 'hi! NERDTreeRO guibg=' s:palette.test
-exe 'hi! NERDTreeBookmark guibg=' s:palette.test
+exe 'hi! NERDTreeLinkTarget guifg=' s:palette.dark_green
+exe 'hi! NERDTreeLinkFile guifg=' s:palette.blue
+"exe 'hi! NERDTreeLinkDir guibg=' s:palette.test
+"exe 'hi! NERDTreeNodeDelimiters guibg=' s:palette.test
+"exe 'hi! NERDTreeRO guibg=' s:palette.test
+"exe 'hi! NERDTreeBookmark guibg=' s:palette.test
 exe 'hi! NERDTreeExecFile guifg=' s:palette.dark_green 'gui=bold'
-exe 'hi! NERDTreeLink guibg=' s:palette.test
+"exe 'hi! NERDTreeLink guibg=' s:palette.blue
 exe 'hi! NERDTreeFlags guifg=' s:palette.blue
 exe 'hi! NERDTreeCWD guifg=' s:palette.purple 'gui=bold,italic'
-exe 'hi! NERDTreeBookmarksLeader guibg=' s:palette.test
-exe 'hi! NERDTreeBookmarksHeader guibg=' s:palette.test
-exe 'hi! NERDTreeBookmarkName guibg=' s:palette.test
-exe 'hi! NERDTreePart guibg=' s:palette.test
-exe 'hi! NERDTreePartFile guibg=' s:palette.test
-exe 'hi! NERDTreeCurrentNode guibg=' s:palette.test
-exe 'hi! NERDTreeGitStatusUnmerged guifg=' s:palette.red
-exe 'hi! NERDTreeGitStatusModified guifg=' s:palette.green
-exe 'hi! NERDTreeGitStatusStaged guibg=' s:palette.test
-exe 'hi! NERDTreeGitStatusRenamed guibg=' s:palette.test
-exe 'hi! NERDTreeGitStatusUntracked guifg=' s:palette.red
-exe 'hi! NERDTreeGitStatusDirty guifg=' s:palette.red
-exe 'hi! NERDTreeGitStatusDeleted guibg=' s:palette.test
-exe 'hi! NERDTreeGitStatusIgnored guibg=' s:palette.test
-exe 'hi! NERDTreeGitStatusClean guibg=' s:palette.test
+"exe 'hi! NERDTreeBookmarksLeader guibg=' s:palette.test
+"exe 'hi! NERDTreeBookmarksHeader guibg=' s:palette.test
+"exe 'hi! NERDTreeBookmarkName guibg=' s:palette.test
+"exe 'hi! NERDTreePart guibg=' s:palette.test
+"exe 'hi! NERDTreePartFile guibg=' s:palette.test
+"exe 'hi! NERDTreeCurrentNode guibg=' s:palette.test
+"exe 'hi! NERDTreeGitStatusUnmerged guifg=' s:palette.red
+"exe 'hi! NERDTreeGitStatusModified guifg=' s:palette.green
+"exe 'hi! NERDTreeGitStatusStaged guibg=' s:palette.test
+"exe 'hi! NERDTreeGitStatusRenamed guibg=' s:palette.test
+"exe 'hi! NERDTreeGitStatusUntracked guifg=' s:palette.red
+"exe 'hi! NERDTreeGitStatusDirty guifg=' s:palette.red
+"exe 'hi! NERDTreeGitStatusDeleted guibg=' s:palette.test
+"exe 'hi! NERDTreeGitStatusIgnored guibg=' s:palette.test
+"exe 'hi! NERDTreeGitStatusClean guibg=' s:palette.test
