@@ -27,8 +27,12 @@ let s:palette.yellow = '#CDBC6B'
 let s:palette.light_yellow = '#FFEE99'
 let s:palette.pink = '#F560F0'
 
-syntax keyword javaScriptReserved from async console require await
-syntax keyword ReduxHooksKeywords useRef useContext useReducer useSelector useDispatch useNavigate useParams
+if exists("syntax_on")
+  syntax reset
+  syntax keyword javaScriptReserved from async console require await
+  syntax keyword ReduxHooksKeywords useRef useContext useReducer useSelector useDispatch useNavigate useParams
+endif
+
 
 exe 'hi! Normal guibg=' s:palette.bg 'guifg=' s:palette.light_gray_2
 exe 'hi! Visual guibg=' s:palette.dark_gray
