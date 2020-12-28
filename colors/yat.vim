@@ -27,6 +27,9 @@ let s:palette.yellow = '#CDBC6B'
 let s:palette.light_yellow = '#FFEE99'
 let s:palette.pink = '#F560F0'
 
+syntax keyword javaScriptReserved from async console require await
+syntax keyword ReduxHooksKeywords useRef useContext useReducer useSelector useDispatch useNavigate useParams
+
 exe 'hi! Normal guibg=' s:palette.bg 'guifg=' s:palette.light_gray_2
 exe 'hi! Visual guibg=' s:palette.dark_gray
 exe 'hi! Conceal guibg=' s:palette.bg 'guifg=' s:palette.gray
@@ -63,7 +66,6 @@ exe 'hi! Search guibg=' s:palette.blue 'guifg=' s:palette.white 'gui=bold'
 exe 'hi! EndOfBuffer guifg=' s:palette.dark_gray
 
 " Javascript
-syntax keyword javaScriptReserved from async console require await
 exe 'hi! javaScriptCommentTodo guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! javaScriptLineComment guifg=' s:palette.light_gray
 exe 'hi! javaScriptCommentSkip guibg=' s:palette.test 'guifg=' s:palette.test
@@ -103,7 +105,6 @@ exe 'hi! javaScriptDebug guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! javascriptConstant guibg=' s:palette.test 'guifg=' s:palette.test
 
 " TSX
-syntax keyword ReduxHooksKeywords useRef useContext useReducer useSelector useDispatch useNavigate useParams
 exe 'hi! tsxIntrinsicTagName guibg=' s:palette.test
 exe 'hi! tsxAttrib guifg=' s:palette.dark_green 'gui=bold,italic'
 exe 'hi! tsxEscJs guibg=' s:palette.test
