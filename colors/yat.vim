@@ -27,6 +27,22 @@ let s:palette.yellow = '#CDBC6B'
 let s:palette.light_yellow = '#FFEE99'
 let s:palette.pink = '#F560F0'
 
+exe 'hi! NERDTreeBookmarksLeader guibg=' s:palette.test
+exe 'hi! NERDTreeBookmarksHeader guibg=' s:palette.test
+exe 'hi! NERDTreeBookmarkName guibg=' s:palette.test
+exe 'hi! NERDTreePart guibg=' s:palette.test
+exe 'hi! NERDTreePartFile guibg=' s:palette.test
+exe 'hi! NERDTreeCurrentNode guibg=' s:palette.test
+exe 'hi! NERDTreeGitStatusUnmerged guifg=' s:palette.red
+exe 'hi! NERDTreeGitStatusModified guifg=' s:palette.green
+exe 'hi! NERDTreeGitStatusStaged guibg=' s:palette.test
+exe 'hi! NERDTreeGitStatusRenamed guibg=' s:palette.test
+exe 'hi! NERDTreeGitStatusUntracked guifg=' s:palette.red
+exe 'hi! NERDTreeGitStatusDirty guifg=' s:palette.red
+exe 'hi! NERDTreeGitStatusDeleted guibg=' s:palette.test
+exe 'hi! NERDTreeGitStatusIgnored guibg=' s:palette.test
+exe 'hi! NERDTreeGitStatusClean guibg=' s:palette.test
+
 exe 'hi! Normal guibg=' s:palette.bg 'guifg=' s:palette.light_gray_2
 exe 'hi! Visual guibg=' s:palette.dark_gray
 exe 'hi! Conceal guibg=' s:palette.bg 'guifg=' s:palette.gray
