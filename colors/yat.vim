@@ -9,13 +9,15 @@ let s:palette.bg = "#000000"
 
 let s:palette.blue = '#0071FE'
 let s:palette.light_blue = '#00AFFF'
+let s:palette.dark_purple = "#C75CE1"
 let s:palette.purple = '#6733C9'
 let s:palette.light_purple = '#814BE5'
 let s:palette.orange = '#EA853F'
 let s:palette.light_orange = '#F6E7C1'
 let s:palette.dark_orange = "#D75F00"
 let s:palette.light_green = '#28A6A4'
-let s:palette.green = '#4AB951'
+let s:palette.light_green_2 = '#4AB951'
+let s:palette.green = '#4AB976'
 let s:palette.dark_green = '#23881B'
 let s:palette.red = '#D22635'
 let s:palette.dark_red = '#870000'
@@ -32,8 +34,6 @@ exe 'hi! Normal guibg=' s:palette.bg 'guifg=' s:palette.light_gray_2
 exe 'hi! Visual guibg=' s:palette.dark_gray
 exe 'hi! Conceal guibg=' s:palette.bg 'guifg=' s:palette.gray
 exe 'hi! ColorColumn guibg=' s:palette.dark_gray
-exe 'hi! Comment guifg=' s:palette.light_gray
-exe 'hi! Constant guifg=' s:palette.red
 exe 'hi! CursorColumn guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! CursorLine guibg=' s:palette.dark_gray
 exe 'hi! CursorLineNr guibg=' s:palette.bg 'guifg=' s:palette.blue
@@ -46,10 +46,6 @@ exe 'hi! Directory guibg=' s:palette.dark_gray 'guifg=' s:palette.light_orange
 exe 'hi! Error guibg=' s:palette.red 'guifg=' s:palette.light_orange
 exe 'hi! ErrorMsg guifg=' s:palette.red 'guibg=' s:palette.white 'gui=bold,inverse'
 exe 'hi! WarningMsg guibg=' s:palette.test 'guifg=' s:palette.test
-exe 'hi! Identifier guifg=' s:palette.blue
-exe 'hi! Statement guifg=' s:palette.purple 'gui=bold,italic'
-exe 'hi! Type guifg=' s:palette.purple 'gui=bold,italic'
-exe 'hi! Special guifg=' s:palette.red 'gui=bold,italic'
 exe 'hi! Pmenu guibg=' s:palette.dark_gray
 exe 'hi! PmenuSel guibg=' s:palette.light_gray 'guifg=' s:palette.white 'gui=bold'
 exe 'hi! PmenuSbar guibg=' s:palette.dark_gray
@@ -62,13 +58,26 @@ exe 'hi! MatchParen guibg=' s:palette.bg  'guifg=' s:palette.white 'gui=underlin
 exe 'hi! Search guibg=' s:palette.blue 'guifg=' s:palette.white 'gui=bold'
 exe 'hi! EndOfBuffer guifg=' s:palette.dark_gray
 
-exe 'hi! Include guifg=' s:palette.blue 'gui=bold,italic'
-exe 'hi! Function guifg=' s:palette.red 'gui=bold,italic'
+exe 'hi! Identifier guifg=' s:palette.blue
+exe 'hi! Statement guifg=' s:palette.purple 'gui=bold,italic'
+exe 'hi! Type guifg=' s:palette.dark_purple 'gui=bold,italic'
+exe 'hi! Special guifg=' s:palette.red 'gui=bold,italic'
+exe 'hi! Comment guifg=' s:palette.light_gray
+"exe 'hi! Constant guifg=' s:palette.light_green
+"exe 'hi! Number guibg=' s:palette.test
+exe 'hi! Exception guifg=' s:palette.light_purple 'gui=bold,italic'
+exe 'hi! Keyword guifg=' s:palette.dark_purple 'gui=bold,italic'
+exe 'hi! Boolean guifg=' s:palette.red 'gui=bold,italic'
+exe 'hi! String guifg=' s:palette.light_green
+exe 'hi! Noise guifg=' s:palette.red 'gui=bold'
+
+exe 'hi! Include guifg=' s:palette.light_purple 'gui=bold,italic'
+exe 'hi! Function guifg=' s:palette.light_purple 'gui=bold,italic'
 exe 'hi! jsOperator guifg=' s:palette.blue 'gui=bold'
 
 " Vim javascript
-"exe 'hi! jsNoise        xxx links to Noise
-"exe 'hi! jsObjectProp   xxx cleared
+exe 'hi! jsNoise guifg=' s:palette.light_purple 'gui=bold'
+"exe 'hi! jsObjectProp guifg=' s:palette.test
 "exe 'hi! jsFuncCall     xxx links to Function
 "exe 'hi! jsPrototype    xxx links to Special
 "exe 'hi! jsTaggedTemplate xxx links to StorageClass
@@ -76,28 +85,26 @@ exe 'hi! jsOperator guifg=' s:palette.blue 'gui=bold'
 "exe 'hi! jsParensError  xxx links to Error
 "exe 'hi! jsStorageClass xxx links to StorageClass
 "exe 'hi! jsDestructuringBlock xxx cleared
-"exe 'hi! jsDestructuringArray xxx cleared
-"exe 'hi! jsVariableDef  xxx cleared
+"exe 'hi! jsDestructuringArray guifg=' s:palette.test
+exe 'hi! jsVariableDef guifg=' s:palette.light_green_2
 "exe 'hi! jsFlowDefinition xxx cleared
 "exe 'hi! jsOperatorKeyword xxx links to jsOperator
-"exe 'hi! jsOperator     xxx links to Operator
-"exe 'hi! jsBooleanTrue  xxx links to Boolean
-"exe 'hi! jsBooleanFalse xxx links to Boolean
-"exe 'hi! jsImport guifg=' s:palette.blue 'gui=bold,italic'
+exe 'hi! jsOperator guifg=' s:palette.light_purple 'gui=bold'
+exe 'hi! jsImport guifg=' s:palette.light_purple 'gui=bold,italic'
 "exe 'hi! jsModuleAsterisk xxx links to Noise
 "exe 'hi! jsModuleKeyword xxx cleared
 "exe 'hi! jsModuleGroup  xxx cleared
 "exe 'hi! jsFlowImportType xxx cleared
-"exe 'hi! jsExport       xxx links to Include
-"exe 'hi! jsExportDefault xxx links to StorageClass
+exe 'hi! jsExport guifg=' s:palette.light_purple 'gui=bold,italic'
+exe 'hi! jsExportDefault guifg=' s:palette.light_purple 'gui=bold,italic'
 "exe 'hi! jsFlowTypeStatement xxx cleared
-"exe 'hi! jsModuleAs     xxx links to Include
-"exe 'hi! jsFrom         xxx links to Include
+exe 'hi! jsModuleAs guifg=' s:palette.light_purple 'gui=bold,italic'
+exe 'hi! jsFrom guifg=' s:palette.light_purple 'gui=bold,italic'
 "exe 'hi! jsModuleComma  xxx links to jsNoise
 "exe 'hi! jsExportDefaultGroup xxx links to jsExportDefault
 "exe 'hi! jsString       xxx links to String
 "exe 'hi! jsFlowTypeKeyword xxx cleared
-"exe 'hi! jsSpecial      xxx links to Special
+"exe 'hi! jsSpecial guibg=' s:palette.test
 "exe 'hi! jsTemplateExpression xxx cleared
 "exe 'hi! jsTemplateString xxx links to String
 "exe 'hi! jsNumber       xxx links to Number
@@ -156,7 +163,7 @@ exe 'hi! jsOperator guifg=' s:palette.blue 'gui=bold'
 "exe 'hi! jsException    xxx links to Exception
 "exe 'hi! jsAsyncKeyword xxx links to Keyword
 "exe 'hi! jsSwitchBlock  xxx cleared
-"exe 'hi! jsGlobalObjects xxx links to Constant
+exe 'hi! jsGlobalObjects guifg=' s:palette.light_blue
 "exe 'hi! jsGlobalNodeObjects xxx links to Constant
 "exe 'hi! jsExceptions   xxx links to Constant
 "exe 'hi! jsBuiltins     xxx links to Constant
@@ -165,9 +172,9 @@ exe 'hi! jsOperator guifg=' s:palette.blue 'gui=bold'
 "exe 'hi! jsDomNodeConsts xxx links to Constant
 "exe 'hi! jsHtmlEvents   xxx links to Special
 "exe 'hi! jsSpreadExpression xxx cleared
-"exe 'hi! jsBracket      xxx cleared
+"exe 'hi! jsBracket guibg=' s:palette.light_purple
 "exe 'hi! jsParens       xxx links to Noise
-"exe 'hi! jsParen        xxx cleared
+"exe 'hi! jsParen guibg=' s:palette.test
 "exe 'hi! jsParensDecorator xxx links to jsParens
 "exe 'hi! jsParenDecorator xxx cleared
 "exe 'hi! jsParensIfElse xxx links to jsParens
@@ -194,7 +201,6 @@ exe 'hi! jsOperator guifg=' s:palette.blue 'gui=bold'
 "exe 'hi! jsClassProperty xxx links to jsObjectKey
 "exe 'hi! jsClassPropertyComputed xxx cleared
 "exe 'hi! jsClassStringKey xxx links to String
-"exe 'hi! jsClassBlock   xxx cleared
 "exe 'hi! jsFuncBraces   xxx links to Noise
 "exe 'hi! jsIfElseBraces xxx links to Noise
 "exe 'hi! jsTryCatchBraces xxx links to Noise
@@ -207,10 +213,6 @@ exe 'hi! jsOperator guifg=' s:palette.blue 'gui=bold'
 "exe 'hi! jsDestructuringNoise xxx links to Noise
 "exe 'hi! jsDestructuringPropertyComputed xxx cleared
 "exe 'hi! jsDestructuringPropertyValue xxx cleared
-"exe 'hi! jsObjectBraces xxx links to Noise
-"exe 'hi! jsObject       xxx cleared
-"exe 'hi! jsBraces       xxx links to Noise
-"exe 'hi! jsModuleBraces xxx links to Noise
 "exe 'hi! jsSpreadOperator xxx links to Operator
 "exe 'hi! jsRestOperator xxx links to Operator
 "exe 'hi! jsTernaryIfOperator xxx links to Operator
