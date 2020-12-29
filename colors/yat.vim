@@ -17,6 +17,7 @@ let s:palette.light_orange = '#F6E7C1'
 let s:palette.dark_orange = "#D75F00"
 let s:palette.light_green = '#28A6A4'
 let s:palette.light_green_2 = '#4AB951'
+let s:palette.light_green_3 = '#28FD15'
 let s:palette.green = '#4AB976'
 let s:palette.dark_green = '#23881B'
 let s:palette.red = '#D22635'
@@ -86,7 +87,7 @@ exe 'hi! jsNoise guifg=' s:palette.light_purple 'gui=bold'
 "exe 'hi! jsStorageClass xxx links to StorageClass
 "exe 'hi! jsDestructuringBlock xxx cleared
 "exe 'hi! jsDestructuringArray guifg=' s:palette.test
-exe 'hi! jsVariableDef guifg=' s:palette.light_green_2
+exe 'hi! jsVariableDef guifg=' s:palette.light_green_3
 "exe 'hi! jsFlowDefinition xxx cleared
 "exe 'hi! jsOperatorKeyword xxx links to jsOperator
 exe 'hi! jsOperator guifg=' s:palette.light_purple 'gui=bold'
