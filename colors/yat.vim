@@ -8,6 +8,7 @@ let s:palette.test = '#ff0000'
 let s:palette.bg = "#000000"
 
 let s:palette.blue = '#0071FE'
+let s:palette.light_blue = '#00AFFF'
 let s:palette.purple = '#6733C9'
 let s:palette.light_purple = '#814BE5'
 let s:palette.orange = '#EA853F'
@@ -35,7 +36,6 @@ exe 'hi! Comment guifg=' s:palette.light_gray
 exe 'hi! Constant guifg=' s:palette.red
 exe 'hi! CursorColumn guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! CursorLine guibg=' s:palette.dark_gray
-exe 'hi! Cursor guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! CursorLineNr guibg=' s:palette.bg 'guifg=' s:palette.blue
 exe 'hi! LineNr guibg=' s:palette.bg 'guifg=' s:palette.gray
 exe 'hi! Delimiter guifg=' s:palette.purple 'gui=bold'
@@ -63,186 +63,186 @@ exe 'hi! Search guibg=' s:palette.blue 'guifg=' s:palette.white 'gui=bold'
 exe 'hi! EndOfBuffer guifg=' s:palette.dark_gray
 
 exe 'hi! Include guifg=' s:palette.blue 'gui=bold,italic'
-exe 'hi! Function guifg=' s:palette.dark_green 'gui=bold,italic'
-"exe 'hi! jsOperator guifg=' s:palette.test
+exe 'hi! Function guifg=' s:palette.red 'gui=bold,italic'
+exe 'hi! jsOperator guifg=' s:palette.blue 'gui=bold'
 
 " Vim javascript
-jsNoise        xxx links to Noise                                                                                                                                            
-jsObjectProp   xxx cleared                                                                                                                                                   
-jsFuncCall     xxx links to Function                                                                                                                                         
-jsPrototype    xxx links to Special                                                                                                                                          
-jsTaggedTemplate xxx links to StorageClass                                                                                                                                   
-jsDot          xxx links to Noise                                                                                                                                            
-jsParensError  xxx links to Error                                                                                                                                            
-jsStorageClass xxx links to StorageClass                                                                                                                                     
-jsDestructuringBlock xxx cleared                                                                                                                                             
-jsDestructuringArray xxx cleared                                                                                                                                             
-jsVariableDef  xxx cleared                                                                                                                                                   
-jsFlowDefinition xxx cleared                                                                                                                                                 
-jsOperatorKeyword xxx links to jsOperator                                                                                                                                    
-jsOperator     xxx links to Operator                                                                                                                                         
-jsBooleanTrue  xxx links to Boolean                                                                                                                                          
-jsBooleanFalse xxx links to Boolean                                                                                                                                          
-jsImport       xxx links to Include                                                                                                                                          
-jsModuleAsterisk xxx links to Noise                                                                                                                                          
-jsModuleKeyword xxx cleared                                                                                                                                                  
-jsModuleGroup  xxx cleared                                                                                                                                                   
-jsFlowImportType xxx cleared                                                                                                                                                 
-jsExport       xxx links to Include                                                                                                                                          
-jsExportDefault xxx links to StorageClass                                                                                                                                    
-jsFlowTypeStatement xxx cleared                                                                                                                                              
-jsModuleAs     xxx links to Include                                                                                                                                          
-jsFrom         xxx links to Include                                                                                                                                          
-jsModuleComma  xxx links to jsNoise                                                                                                                                          
-jsExportDefaultGroup xxx links to jsExportDefault                                                                                                                            
-jsString       xxx links to String                                                                                                                                           
-jsFlowTypeKeyword xxx cleared                                                                                                                                                
-jsSpecial      xxx links to Special                                                                                                                                          
-jsTemplateExpression xxx cleared                                                                                                                                             
-jsTemplateString xxx links to String                                                                                                                                         
-jsNumber       xxx links to Number                                                                                                                                           
-jsFloat        xxx links to Float                                                                                                                                            
-jsTemplateBraces xxx links to Noise                                                                                                                                          
-jsRegexpCharClass xxx links to Character                                                                                                                                     
-jsRegexpBoundary xxx links to SpecialChar                                                                                                                                    
-jsRegexpBackRef xxx links to SpecialChar                                                                                                                                     
-jsRegexpQuantifier xxx links to SpecialChar                                                                                                                                  
-jsRegexpOr     xxx links to Conditional                                                                                                                                      
-jsRegexpMod    xxx links to SpecialChar                                                                                                                                      
-jsRegexpGroup  xxx links to jsRegexpString
-jsRegexpString xxx links to String                                                                                                                                           
-jsObjectSeparator xxx links to Noise                                                                                                                                         
-jsObjectShorthandProp xxx links to jsObjectKey                                                                                                                               
-jsFunctionKey  xxx cleared                                                                                                                                                   
-jsObjectValue  xxx cleared                                                                                                                                                   
-jsObjectKey    xxx cleared                                                                                                                                                   
-jsObjectKeyString xxx links to String                                                                                                                                        
-jsBrackets     xxx links to Noise                                                                                                                                            
-jsFuncArgs     xxx cleared                                                                                                                                                   
-jsObjectKeyComputed xxx cleared                                                                                                                                              
-jsObjectColon  xxx links to jsNoise                                                                                                                                          
-jsObjectFuncName xxx links to Function                                                                                                                                       
-jsObjectMethodType xxx links to Type                                                                                                                                         
-jsObjectStringKey xxx links to String                                                                                                                                        
-jsNull         xxx links to Type                                                                                                                                             
-jsReturn       xxx links to Statement                                                                                                                                        
-jsUndefined    xxx links to Type                                                                                                                                             
-jsNan          xxx links to Number                                                                                                                                           
-jsThis         xxx links to Special                                                                                                                                          
-jsSuper        xxx links to Constant                                                                                                                                         
-jsBlock        xxx cleared                                                                                                                                                   
-jsBlockLabel   xxx links to Identifier                                                                                                                                       
-jsBlockLabelKey xxx links to jsBlockLabel                                                                                                                                    
-jsStatement    xxx links to Statement                                                                                                                                        
-jsConditional  xxx links to Conditional                                                                                                                                      
-jsParenIfElse  xxx cleared                                                                                                                                                   
-jsCommentIfElse xxx links to jsComment                                                                                                                                       
-jsIfElseBlock  xxx cleared                                                                                                                                                   
-jsParenSwitch  xxx cleared                                                                                                                                                   
-jsRepeat       xxx links to Repeat                                                                                                                                           
-jsParenRepeat  xxx cleared                                                                                                                                                   
-jsForAwait     xxx links to Keyword                                                                                                                                          
-jsDo           xxx links to Repeat                                                                                                                                           
-jsRepeatBlock  xxx cleared                                                                                                                                                   
-jsLabel        xxx links to Label                                                                                                                                            
-jsSwitchColon  xxx links to Noise                                                                                                                                            
-jsSwitchCase   xxx cleared                                                                                                                                                   
-jsTry          xxx links to Exception                                                                                                                                        
-jsTryCatchBlock xxx cleared                                                                                                                                                  
-jsFinally      xxx links to Exception                                                                                                                                        
-jsFinallyBlock xxx cleared                                                                                                                                                   
-jsCatch        xxx links to Exception                                                                                                                                        
-jsParenCatch   xxx cleared
-jsException    xxx links to Exception                                                                                                                                        
-jsAsyncKeyword xxx links to Keyword                                                                                                                                          
-jsSwitchBlock  xxx cleared                                                                                                                                                   
-jsGlobalObjects xxx links to Constant                                                                                                                                        
-jsGlobalNodeObjects xxx links to Constant                                                                                                                                    
-jsExceptions   xxx links to Constant                                                                                                                                         
-jsBuiltins     xxx links to Constant                                                                                                                                         
-jsFutureKeys   xxx cleared                                                                                                                                                   
-jsDomErrNo     xxx links to Constant                                                                                                                                         
-jsDomNodeConsts xxx links to Constant                                                                                                                                        
-jsHtmlEvents   xxx links to Special                                                                                                                                          
-jsSpreadExpression xxx cleared                                                                                                                                               
-jsBracket      xxx cleared                                                                                                                                                   
-jsParens       xxx links to Noise                                                                                                                                            
-jsParen        xxx cleared                                                                                                                                                   
-jsParensDecorator xxx links to jsParens                                                                                                                                      
-jsParenDecorator xxx cleared                                                                                                                                                 
-jsParensIfElse xxx links to jsParens                                                                                                                                         
-jsParensRepeat xxx links to jsParens                                                                                                                                         
-jsCommentRepeat xxx links to jsComment                                                                                                                                       
-jsParensSwitch xxx links to jsParens                                                                                                                                         
-jsParensCatch  xxx links to jsParens                                                                                                                                         
-jsFuncParens   xxx links to Noise                                                                                                                                            
-jsFuncArgCommas xxx cleared                                                                                                                                                  
-jsComment      xxx links to Comment                                                                                                                                          
-jsFuncArgExpression xxx cleared                                                                                                                                              
-jsRestExpression xxx links to jsFuncArgs                                                                                                                                     
-jsFlowArgumentDef xxx cleared                                                                                                                                                
-jsCommentFunction xxx links to jsComment                                                                                                                                     
-jsFuncBlock    xxx cleared                                                                                                                                                   
-jsFlowReturn   xxx cleared                                                                                                                                                   
-jsClassBraces  xxx links to Noise                                                                                                                                            
-jsClassFuncName xxx links to jsFuncName                                                                                                                                      
-jsClassMethodType xxx links to Type                                                                                                                                          
-jsArrowFunction xxx links to Type                                                                                                                                            
-jsArrowFuncArgs xxx links to jsFuncArgs                                                                                                                                      
-jsGenerator    xxx links to jsFunction                                                                                                                                       
-jsDecorator    xxx links to Special                                                                                                                                          
-jsClassProperty xxx links to jsObjectKey                                                                                                                                     
-jsClassPropertyComputed xxx cleared                                                                                                                                          
-jsClassStringKey xxx links to String                                                                                                                                         
-jsClassBlock   xxx cleared                                                                                                                                                   
-jsFuncBraces   xxx links to Noise
-jsIfElseBraces xxx links to Noise                                                                                                                                            
-jsTryCatchBraces xxx links to Noise                                                                                                                                          
-jsFinallyBraces xxx links to Noise                                                                                                                                           
-jsSwitchBraces xxx links to Noise                                                                                                                                            
-jsRepeatBraces xxx links to Noise                                                                                                                                            
-jsDestructuringBraces xxx links to Noise                                                                                                                                     
-jsDestructuringProperty xxx links to jsFuncArgs                                                                                                                              
-jsDestructuringAssignment xxx links to jsObjectKey                                                                                                                           
-jsDestructuringNoise xxx links to Noise                                                                                                                                      
-jsDestructuringPropertyComputed xxx cleared                                                                                                                                  
-jsDestructuringPropertyValue xxx cleared                                                                                                                                     
-jsObjectBraces xxx links to Noise                                                                                                                                            
-jsObject       xxx cleared                                                                                                                                                   
-jsBraces       xxx links to Noise                                                                                                                                            
-jsModuleBraces xxx links to Noise                                                                                                                                            
-jsSpreadOperator xxx links to Operator                                                                                                                                       
-jsRestOperator xxx links to Operator                                                                                                                                         
-jsTernaryIfOperator xxx links to Operator                                                                                                                                    
-jsTernaryIf    xxx cleared                                                                                                                                                   
-jsFuncName     xxx links to Function                                                                                                                                         
-jsFlowFunctionGroup xxx cleared                                                                                                                                              
-jsFuncArgOperator xxx links to jsFuncArgs                                                                                                                                    
-jsArguments    xxx links to Special                                                                                                                                          
-jsFunction     xxx links to Type
-jsClassKeyword xxx links to Keyword
-jsExtendsKeyword xxx links to Keyword
-jsClassNoise   xxx links to Noise
-jsFlowClassFunctionGroup xxx cleared
-jsFlowClassGroup xxx cleared
-jsCommentClass xxx links to jsComment
-jsClassDefinition xxx links to jsFuncName
-jsClassValue   xxx cleared
-jsFlowClassDef xxx cleared
-jsDestructuringValue xxx cleared
-jsDestructuringValueAssignment xxx cleared
-jsCommentTodo  xxx links to Todo
-jsEnvComment   xxx links to PreProc
-jsDecoratorFunction xxx links to Function
-jsCharacter    xxx links to Character
-jsBranch       xxx links to Conditional
-jsError        xxx links to Error
-jsOf           xxx links to Operator
-jsDomElemAttrs xxx links to Label
-jsDomElemFuncs xxx links to PreProc
-jsHtmlElemAttrs xxx links to Label
-jsHtmlElemFuncs xxx links to PreProc
-jsCssStyles    xxx links to Label
+"exe 'hi! jsNoise        xxx links to Noise
+"exe 'hi! jsObjectProp   xxx cleared
+"exe 'hi! jsFuncCall     xxx links to Function
+"exe 'hi! jsPrototype    xxx links to Special
+"exe 'hi! jsTaggedTemplate xxx links to StorageClass
+"exe 'hi! jsDot          xxx links to Noise
+"exe 'hi! jsParensError  xxx links to Error
+"exe 'hi! jsStorageClass xxx links to StorageClass
+"exe 'hi! jsDestructuringBlock xxx cleared
+"exe 'hi! jsDestructuringArray xxx cleared
+"exe 'hi! jsVariableDef  xxx cleared
+"exe 'hi! jsFlowDefinition xxx cleared
+"exe 'hi! jsOperatorKeyword xxx links to jsOperator
+"exe 'hi! jsOperator     xxx links to Operator
+"exe 'hi! jsBooleanTrue  xxx links to Boolean
+"exe 'hi! jsBooleanFalse xxx links to Boolean
+"exe 'hi! jsImport guifg=' s:palette.blue 'gui=bold,italic'
+"exe 'hi! jsModuleAsterisk xxx links to Noise
+"exe 'hi! jsModuleKeyword xxx cleared
+"exe 'hi! jsModuleGroup  xxx cleared
+"exe 'hi! jsFlowImportType xxx cleared
+"exe 'hi! jsExport       xxx links to Include
+"exe 'hi! jsExportDefault xxx links to StorageClass
+"exe 'hi! jsFlowTypeStatement xxx cleared
+"exe 'hi! jsModuleAs     xxx links to Include
+"exe 'hi! jsFrom         xxx links to Include
+"exe 'hi! jsModuleComma  xxx links to jsNoise
+"exe 'hi! jsExportDefaultGroup xxx links to jsExportDefault
+"exe 'hi! jsString       xxx links to String
+"exe 'hi! jsFlowTypeKeyword xxx cleared
+"exe 'hi! jsSpecial      xxx links to Special
+"exe 'hi! jsTemplateExpression xxx cleared
+"exe 'hi! jsTemplateString xxx links to String
+"exe 'hi! jsNumber       xxx links to Number
+"exe 'hi! jsFloat        xxx links to Float
+"exe 'hi! jsTemplateBraces xxx links to Noise
+"exe 'hi! jsRegexpCharClass xxx links to Character
+"exe 'hi! jsRegexpBoundary xxx links to SpecialChar
+"exe 'hi! jsRegexpBackRef xxx links to SpecialChar
+"exe 'hi! jsRegexpQuantifier xxx links to SpecialChar
+"exe 'hi! jsRegexpOr     xxx links to Conditional
+"exe 'hi! jsRegexpMod    xxx links to SpecialChar
+"exe 'hi! jsRegexpGroup  xxx links to jsRegexpString
+"exe 'hi! jsRegexpString xxx links to String
+"exe 'hi! jsObjectSeparator xxx links to Noise
+"exe 'hi! jsObjectShorthandProp xxx links to jsObjectKey
+"exe 'hi! jsFunctionKey  xxx cleared
+"exe 'hi! jsObjectValue  xxx cleared
+"exe 'hi! jsObjectKey    xxx cleared
+"exe 'hi! jsObjectKeyString xxx links to String
+"exe 'hi! jsBrackets     xxx links to Noise
+"exe 'hi! jsFuncArgs     xxx cleared
+"exe 'hi! jsObjectKeyComputed xxx cleared
+"exe 'hi! jsObjectColon  xxx links to jsNoise
+"exe 'hi! jsObjectFuncName xxx links to Function
+"exe 'hi! jsObjectMethodType xxx links to Type
+"exe 'hi! jsObjectStringKey xxx links to String
+"exe 'hi! jsNull         xxx links to Type
+"exe 'hi! jsReturn       xxx links to Statement
+"exe 'hi! jsUndefined    xxx links to Type
+"exe 'hi! jsNan          xxx links to Number
+"exe 'hi! jsThis         xxx links to Special
+"exe 'hi! jsSuper        xxx links to Constant
+"exe 'hi! jsBlock        xxx cleared
+"exe 'hi! jsBlockLabel   xxx links to Identifier
+"exe 'hi! jsBlockLabelKey xxx links to jsBlockLabel
+"exe 'hi! jsStatement    xxx links to Statement
+"exe 'hi! jsConditional  xxx links to Conditional
+"exe 'hi! jsParenIfElse  xxx cleared
+"exe 'hi! jsCommentIfElse xxx links to jsComment
+"exe 'hi! jsIfElseBlock  xxx cleared
+"exe 'hi! jsParenSwitch  xxx cleared
+"exe 'hi! jsRepeat       xxx links to Repeat
+"exe 'hi! jsParenRepeat  xxx cleared
+"exe 'hi! jsForAwait     xxx links to Keyword
+"exe 'hi! jsDo           xxx links to Repeat
+"exe 'hi! jsRepeatBlock  xxx cleared
+"exe 'hi! jsLabel        xxx links to Label
+"exe 'hi! jsSwitchColon  xxx links to Noise
+"exe 'hi! jsSwitchCase   xxx cleared
+"exe 'hi! jsTry          xxx links to Exception
+"exe 'hi! jsTryCatchBlock xxx cleared
+"exe 'hi! jsFinally      xxx links to Exception
+"exe 'hi! jsFinallyBlock xxx cleared
+"exe 'hi! jsCatch        xxx links to Exception
+"exe 'hi! jsParenCatch   xxx cleared
+"exe 'hi! jsException    xxx links to Exception
+"exe 'hi! jsAsyncKeyword xxx links to Keyword
+"exe 'hi! jsSwitchBlock  xxx cleared
+"exe 'hi! jsGlobalObjects xxx links to Constant
+"exe 'hi! jsGlobalNodeObjects xxx links to Constant
+"exe 'hi! jsExceptions   xxx links to Constant
+"exe 'hi! jsBuiltins     xxx links to Constant
+"exe 'hi! jsFutureKeys   xxx cleared
+"exe 'hi! jsDomErrNo     xxx links to Constant
+"exe 'hi! jsDomNodeConsts xxx links to Constant
+"exe 'hi! jsHtmlEvents   xxx links to Special
+"exe 'hi! jsSpreadExpression xxx cleared
+"exe 'hi! jsBracket      xxx cleared
+"exe 'hi! jsParens       xxx links to Noise
+"exe 'hi! jsParen        xxx cleared
+"exe 'hi! jsParensDecorator xxx links to jsParens
+"exe 'hi! jsParenDecorator xxx cleared
+"exe 'hi! jsParensIfElse xxx links to jsParens
+"exe 'hi! jsParensRepeat xxx links to jsParens
+"exe 'hi! jsCommentRepeat xxx links to jsComment
+"exe 'hi! jsParensSwitch xxx links to jsParens
+"exe 'hi! jsParensCatch  xxx links to jsParens
+"exe 'hi! jsFuncParens   xxx links to Noise
+"exe 'hi! jsFuncArgCommas xxx cleared
+"exe 'hi! jsComment      xxx links to Comment
+"exe 'hi! jsFuncArgExpression xxx cleared
+"exe 'hi! jsRestExpression xxx links to jsFuncArgs
+"exe 'hi! jsFlowArgumentDef xxx cleared
+"exe 'hi! jsCommentFunction xxx links to jsComment
+"exe 'hi! jsFuncBlock    xxx cleared
+"exe 'hi! jsFlowReturn   xxx cleared
+"exe 'hi! jsClassBraces  xxx links to Noise
+"exe 'hi! jsClassFuncName xxx links to jsFuncName
+"exe 'hi! jsClassMethodType xxx links to Type
+"exe 'hi! jsArrowFunction xxx links to Type
+"exe 'hi! jsArrowFuncArgs xxx links to jsFuncArgs
+"exe 'hi! jsGenerator    xxx links to jsFunction
+"exe 'hi! jsDecorator    xxx links to Special
+"exe 'hi! jsClassProperty xxx links to jsObjectKey
+"exe 'hi! jsClassPropertyComputed xxx cleared
+"exe 'hi! jsClassStringKey xxx links to String
+"exe 'hi! jsClassBlock   xxx cleared
+"exe 'hi! jsFuncBraces   xxx links to Noise
+"exe 'hi! jsIfElseBraces xxx links to Noise
+"exe 'hi! jsTryCatchBraces xxx links to Noise
+"exe 'hi! jsFinallyBraces xxx links to Noise
+"exe 'hi! jsSwitchBraces xxx links to Noise
+"exe 'hi! jsRepeatBraces xxx links to Noise
+"exe 'hi! jsDestructuringBraces xxx links to Noise
+"exe 'hi! jsDestructuringProperty xxx links to jsFuncArgs
+"exe 'hi! jsDestructuringAssignment xxx links to jsObjectKey
+"exe 'hi! jsDestructuringNoise xxx links to Noise
+"exe 'hi! jsDestructuringPropertyComputed xxx cleared
+"exe 'hi! jsDestructuringPropertyValue xxx cleared
+"exe 'hi! jsObjectBraces xxx links to Noise
+"exe 'hi! jsObject       xxx cleared
+"exe 'hi! jsBraces       xxx links to Noise
+"exe 'hi! jsModuleBraces xxx links to Noise
+"exe 'hi! jsSpreadOperator xxx links to Operator
+"exe 'hi! jsRestOperator xxx links to Operator
+"exe 'hi! jsTernaryIfOperator xxx links to Operator
+"exe 'hi! jsTernaryIf    xxx cleared
+"exe 'hi! jsFuncName     xxx links to Function
+"exe 'hi! jsFlowFunctionGroup xxx cleared
+"exe 'hi! jsFuncArgOperator xxx links to jsFuncArgs
+"exe 'hi! jsArguments    xxx links to Special
+"exe 'hi! jsFunction     xxx links to Type
+"exe 'hi! jsClassKeyword xxx links to Keyword
+"exe 'hi! jsExtendsKeyword xxx links to Keyword
+"exe 'hi! jsClassNoise   xxx links to Noise
+"exe 'hi! jsFlowClassFunctionGroup xxx cleared
+"exe 'hi! jsFlowClassGroup xxx cleared
+"exe 'hi! jsCommentClass xxx links to jsComment
+"exe 'hi! jsClassDefinition xxx links to jsFuncName
+"exe 'hi! jsClassValue   xxx cleared
+"exe 'hi! jsFlowClassDef xxx cleared
+"exe 'hi! jsDestructuringValue xxx cleared
+"exe 'hi! jsDestructuringValueAssignment xxx cleared
+"exe 'hi! jsCommentTodo  xxx links to Todo
+"exe 'hi! jsEnvComment   xxx links to PreProc
+"exe 'hi! jsDecoratorFunction xxx links to Function
+"exe 'hi! jsCharacter    xxx links to Character
+"exe 'hi! jsBranch       xxx links to Conditional
+"exe 'hi! jsError        xxx links to Error
+"exe 'hi! jsOf           xxx links to Operator
+"exe 'hi! jsDomElemAttrs xxx links to Label
+"exe 'hi! jsDomElemFuncs xxx links to PreProc
+"exe 'hi! jsHtmlElemAttrs xxx links to Label
+"exe 'hi! jsHtmlElemFuncs xxx links to PreProc
+"exe 'hi! jsCssStyles    xxx links to Label
 
 
 
@@ -321,7 +321,7 @@ exe 'hi! tsxAttribHook guibg=' s:palette.test
 exe 'hi! tsxNotOperator guifg=' s:palette.red 'gui=bold'
 exe 'hi! tsxRegionEnd guibg=' s:palette.test
 exe 'hi! ReactLifeCycleMethods guifg=' s:palette.dark_green 'gui=bold,italic'
-exe 'hi! ReduxKeywords guibg=' s:palette.test
+exe 'hi! ReduxKeywords guifg=' s:palette.blue 'gui=bold'
 exe 'hi! ReduxHooksKeywords guifg=' s:palette.dark_green 'gui=bold,italic'
 
 " Typescript
