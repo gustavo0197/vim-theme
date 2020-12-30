@@ -310,8 +310,8 @@ exe 'hi! tsxEqual guifg=' s:palette.red 'gui=bold'
 exe 'hi! tsxString guifg=' s:palette.dark_orange
 exe 'hi! tsxComment guibg=' s:palette.test
 exe 'hi! tsxColon guibg=' s:palette.test
-exe 'hi! tsxIfOperator guifg=' s:palette.purple 'gui=bold'
-exe 'hi! tsxElseOperator guifg=' s:palette.purple 'gui=bold'
+"exe 'hi! tsxIfOperator guifg=' s:palette.purple 'gui=bold'
+"exe 'hi! tsxElseOperator guifg=' s:palette.purple 'gui=bold'
 exe 'hi! tsxAttributeBraces guifg=' s:palette.red 'gui=bold'
 exe 'hi! tsxJsBlock guifg=' s:palette.dark_orange
 exe 'hi! tsxAttributeComment guibg=' s:palette.test
@@ -323,9 +323,9 @@ exe 'hi! tsxAttribPunct guibg=' s:palette.test
 exe 'hi! tsxAttribHook guibg=' s:palette.test
 exe 'hi! tsxNotOperator guifg=' s:palette.red 'gui=bold'
 exe 'hi! tsxRegionEnd guibg=' s:palette.test
-exe 'hi! ReactLifeCycleMethods guifg=' s:palette.dark_green 'gui=bold,italic'
+exe 'hi! ReactLifeCycleMethods guifg=' s:palette.light_green_3 'gui=bold,italic'
 exe 'hi! ReduxKeywords guifg=' s:palette.blue 'gui=bold'
-exe 'hi! ReduxHooksKeywords guifg=' s:palette.dark_green 'gui=bold,italic'
+exe 'hi! ReduxHooksKeywords guifg=' s:palette.light_green_3 'gui=bold,italic'
 
 " Typescript
 exe 'hi! typescriptBraces guifg=' s:palette.purple 'gui=bold'
