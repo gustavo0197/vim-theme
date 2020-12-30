@@ -7,14 +7,20 @@ let s:palette.test = '#ff0000'
 
 let s:palette.bg = "#000000"
 
+let s:palette.dark_blue = '#3A96AB'
 let s:palette.blue = '#0071FE'
+let s:palette.light_blue = '#00AFFF'
+let s:palette.dark_purple = "#C75CE1"
 let s:palette.purple = '#6733C9'
 let s:palette.light_purple = '#814BE5'
 let s:palette.orange = '#EA853F'
 let s:palette.light_orange = '#F6E7C1'
+let s:palette.light_orange_2 = '#EFB042'
 let s:palette.dark_orange = "#D75F00"
 let s:palette.light_green = '#28A6A4'
-let s:palette.green = '#4AB951'
+let s:palette.light_green_2 = '#4AB951'
+let s:palette.light_green_3 = '#28FD15'
+let s:palette.green = '#4AB976'
 let s:palette.dark_green = '#23881B'
 let s:palette.red = '#D22635'
 let s:palette.dark_red = '#870000'
@@ -27,22 +33,12 @@ let s:palette.yellow = '#CDBC6B'
 let s:palette.light_yellow = '#FFEE99'
 let s:palette.pink = '#F560F0'
 
-if exists("syntax_on")
-  syntax reset
-  syntax keyword javaScriptReserved from async console require await
-  syntax keyword ReduxHooksKeywords useRef useContext useReducer useSelector useDispatch useNavigate useParams
-endif
-
-
 exe 'hi! Normal guibg=' s:palette.bg 'guifg=' s:palette.light_gray_2
 exe 'hi! Visual guibg=' s:palette.dark_gray
 exe 'hi! Conceal guibg=' s:palette.bg 'guifg=' s:palette.gray
 exe 'hi! ColorColumn guibg=' s:palette.dark_gray
-exe 'hi! Comment guifg=' s:palette.light_gray
-exe 'hi! Constant guifg=' s:palette.red
 exe 'hi! CursorColumn guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! CursorLine guibg=' s:palette.dark_gray
-exe 'hi! Cursor guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! CursorLineNr guibg=' s:palette.bg 'guifg=' s:palette.blue
 exe 'hi! LineNr guibg=' s:palette.bg 'guifg=' s:palette.gray
 exe 'hi! Delimiter guifg=' s:palette.purple 'gui=bold'
@@ -53,10 +49,6 @@ exe 'hi! Directory guibg=' s:palette.dark_gray 'guifg=' s:palette.light_orange
 exe 'hi! Error guibg=' s:palette.red 'guifg=' s:palette.light_orange
 exe 'hi! ErrorMsg guifg=' s:palette.red 'guibg=' s:palette.white 'gui=bold,inverse'
 exe 'hi! WarningMsg guibg=' s:palette.test 'guifg=' s:palette.test
-exe 'hi! Identifier guifg=' s:palette.blue
-exe 'hi! Statement guifg=' s:palette.purple 'gui=bold,italic'
-exe 'hi! Type guifg=' s:palette.purple 'gui=bold,italic'
-exe 'hi! Special guifg=' s:palette.purple 'gui=bold,italic'
 exe 'hi! Pmenu guibg=' s:palette.dark_gray
 exe 'hi! PmenuSel guibg=' s:palette.light_gray 'guifg=' s:palette.white 'gui=bold'
 exe 'hi! PmenuSbar guibg=' s:palette.dark_gray
@@ -68,6 +60,36 @@ exe 'hi! SignColumn guibg=' s:palette.dark_gray
 exe 'hi! MatchParen guibg=' s:palette.bg  'guifg=' s:palette.white 'gui=underline'
 exe 'hi! Search guibg=' s:palette.blue 'guifg=' s:palette.white 'gui=bold'
 exe 'hi! EndOfBuffer guifg=' s:palette.dark_gray
+
+exe 'hi! Identifier guifg=' s:palette.blue
+exe 'hi! Statement guifg=' s:palette.purple 'gui=bold,italic'
+exe 'hi! Type guifg=' s:palette.dark_purple 'gui=bold,italic'
+exe 'hi! Special guifg=' s:palette.red 'gui=bold,italic'
+exe 'hi! Comment guifg=' s:palette.light_gray
+"exe 'hi! Constant guifg=' s:palette.light_green
+exe 'hi! Number guifg=' s:palette.light_orange_2 'gui=bold'
+exe 'hi! link Float Number'
+exe 'hi! Exception guifg=' s:palette.light_purple 'gui=bold,italic'
+exe 'hi! Keyword guifg=' s:palette.dark_purple 'gui=bold,italic'
+exe 'hi! Boolean guifg=' s:palette.red 'gui=bold,italic'
+exe 'hi! String guifg=' s:palette.light_green
+"exe 'hi! Character guibg=' s:palette.test
+exe 'hi! Noise guifg=' s:palette.red 'gui=bold'
+
+exe 'hi! Include guifg=' s:palette.light_purple 'gui=bold,italic'
+exe 'hi! Function guifg=' s:palette.light_purple 'gui=bold,italic'
+exe 'hi! jsOperator guifg=' s:palette.blue 'gui=bold'
+
+" Vim javascript
+exe 'hi! jsNoise guifg=' s:palette.purple 'gui=bold'
+exe 'hi! jsVariableDef guifg=' s:palette.light_blue
+exe 'hi! jsOperator guifg=' s:palette.purple 'gui=bold'
+exe 'hi! jsImport guifg=' s:palette.purple 'gui=bold,italic'
+exe 'hi! jsExport guifg=' s:palette.purple 'gui=bold,italic'
+exe 'hi! jsExportDefault guifg=' s:palette.purple 'gui=bold,italic'
+exe 'hi! jsModuleAs guifg=' s:palette.purple 'gui=bold,italic'
+exe 'hi! jsFrom guifg=' s:palette.purple 'gui=bold,italic'
+exe 'hi! jsGlobalObjects guifg=' s:palette.light_blue
 
 " Javascript
 exe 'hi! javaScriptCommentTodo guibg=' s:palette.test 'guifg=' s:palette.test
@@ -143,14 +165,14 @@ exe 'hi! tsxAttribHook guibg=' s:palette.test
 exe 'hi! tsxNotOperator guifg=' s:palette.red 'gui=bold'
 exe 'hi! tsxRegionEnd guibg=' s:palette.test
 exe 'hi! ReactLifeCycleMethods guifg=' s:palette.dark_green 'gui=bold,italic'
-exe 'hi! ReduxKeywords guibg=' s:palette.test
+exe 'hi! ReduxKeywords guifg=' s:palette.blue 'gui=bold'
 exe 'hi! ReduxHooksKeywords guifg=' s:palette.dark_green 'gui=bold,italic'
 
 " Typescript
-exe 'hi! typescriptBraces guifg=' s:palette.purple 'gui=bold'
+exe 'hi! typescriptBraces guifg=' s:palette.red 'gui=bold'
 exe 'hi! typescriptReserved guifg=' s:palette.purple 'gui=bold,italic'
 exe 'hi! typescriptLabel guifg=' s:palette.dark_orange 'gui=bold,italic'
-exe 'hi! typescriptParens guifg=' s:palette.purple 'gui=bold'
+exe 'hi! typescriptParens guifg=' s:palette.red 'gui=bold'
 exe 'hi! typescriptNumber guifg=' s:palette.blue
 
 " HTML
@@ -214,18 +236,3 @@ exe 'hi! NERDTreeExecFile guifg=' s:palette.dark_green 'gui=bold'
 "exe 'hi! NERDTreeLink guibg=' s:palette.blue
 exe 'hi! NERDTreeFlags guifg=' s:palette.blue
 exe 'hi! NERDTreeCWD guifg=' s:palette.purple 'gui=bold,italic'
-"exe 'hi! NERDTreeBookmarksLeader guibg=' s:palette.test
-"exe 'hi! NERDTreeBookmarksHeader guibg=' s:palette.test
-"exe 'hi! NERDTreeBookmarkName guibg=' s:palette.test
-"exe 'hi! NERDTreePart guibg=' s:palette.test
-"exe 'hi! NERDTreePartFile guibg=' s:palette.test
-"exe 'hi! NERDTreeCurrentNode guibg=' s:palette.test
-"exe 'hi! NERDTreeGitStatusUnmerged guifg=' s:palette.red
-"exe 'hi! NERDTreeGitStatusModified guifg=' s:palette.green
-"exe 'hi! NERDTreeGitStatusStaged guibg=' s:palette.test
-"exe 'hi! NERDTreeGitStatusRenamed guibg=' s:palette.test
-"exe 'hi! NERDTreeGitStatusUntracked guifg=' s:palette.red
-"exe 'hi! NERDTreeGitStatusDirty guifg=' s:palette.red
-"exe 'hi! NERDTreeGitStatusDeleted guibg=' s:palette.test
-"exe 'hi! NERDTreeGitStatusIgnored guibg=' s:palette.test
-"exe 'hi! NERDTreeGitStatusClean guibg=' s:palette.test
