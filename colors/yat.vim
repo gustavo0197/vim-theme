@@ -63,15 +63,15 @@ exe 'hi! EndOfBuffer guifg=' s:palette.dark_gray
 
 exe 'hi! Identifier guifg=' s:palette.blue
 exe 'hi! Statement guifg=' s:palette.purple 'gui=bold,italic'
-exe 'hi! Type guifg=' s:palette.dark_purple 'gui=bold,italic'
+exe 'hi! Type guifg=' s:palette.red 'gui=bold,italic'
 exe 'hi! Special guifg=' s:palette.red 'gui=bold,italic'
 exe 'hi! Comment guifg=' s:palette.light_gray
 "exe 'hi! Constant guifg=' s:palette.light_green
 exe 'hi! Number guifg=' s:palette.light_orange_2 'gui=bold'
 exe 'hi! link Float Number'
 exe 'hi! Exception guifg=' s:palette.light_purple 'gui=bold,italic'
-exe 'hi! Keyword guifg=' s:palette.dark_purple 'gui=bold,italic'
-exe 'hi! Boolean guifg=' s:palette.red 'gui=bold,italic'
+exe 'hi! Keyword guifg=' s:palette.red 'gui=bold,italic'
+exe 'hi! Boolean guifg=' s:palette.dark_orange 'gui=bold,italic'
 exe 'hi! String guifg=' s:palette.light_green
 "exe 'hi! Character guibg=' s:palette.test
 exe 'hi! Noise guifg=' s:palette.red 'gui=bold'
