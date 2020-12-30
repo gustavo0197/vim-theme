@@ -42,7 +42,8 @@ exe 'hi! CursorLine guibg=' s:palette.dark_gray
 exe 'hi! CursorLineNr guibg=' s:palette.bg 'guifg=' s:palette.blue
 exe 'hi! LineNr guibg=' s:palette.bg 'guifg=' s:palette.gray
 exe 'hi! Delimiter guifg=' s:palette.purple 'gui=bold'
-exe 'hi! DiffAdd guibg=' s:palette.test 'guifg=' s:palette.test
+exe 'hi! diffAdded guifg=' s:palette.light_green_3
+exe 'hi! diffRemoved guifg=' s:palette.test
 exe 'hi! DiffChange guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! DiffText guibg=' s:palette.test 'guifg=' s:palette.test
 exe 'hi! Directory guibg=' s:palette.dark_gray 'guifg=' s:palette.light_orange
