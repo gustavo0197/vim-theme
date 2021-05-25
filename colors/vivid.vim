@@ -15,6 +15,7 @@ let s:colors.variable = "#FF478D"
 let s:colors.statement = "#14E5D4"
 let s:colors.noise = "#6160a4"
 let s:colors.number = "#FF7135"
+let s:colors.constant = "#D62C2C"
 
 let s:palette.dark_blue = '#3A96AB'
 let s:palette.blue = '#0071FE'
@@ -71,20 +72,20 @@ exe 'hi! MatchParen guibg=' s:palette.bg  'guifg=' s:palette.white 'gui=underlin
 exe 'hi! Search guibg=' s:palette.blue 'guifg=' s:palette.white 'gui=bold'
 exe 'hi! EndOfBuffer guifg=' s:palette.dark_gray
 
-exe 'hi! Identifier guifg=' s:palette.test
+exe 'hi! Identifier guifg=' s:colors.noise
 exe 'hi! Statement guifg=' s:colors.keyword
 exe 'hi! Type guifg=' s:colors.statement
-exe 'hi! Special guifg=' s:palette.test 'gui=bold,italic'
+exe 'hi! Special guifg=' s:colors.number
 exe 'hi! Comment guifg=' s:palette.light_gray 'gui=italic'
-"exe 'hi! Constant guifg=' s:palette.light_green
+exe 'hi! Constant guifg=' s:colors.function
 exe 'hi! Number guifg=' s:colors.number
 exe 'hi! link Float Number'
 exe 'hi! Exception guifg=' s:colors.keyword
 exe 'hi! Keyword guifg=' s:colors.keyword
-exe 'hi! Boolean guifg=' s:colors.number 'gui=bold,italic'
+exe 'hi! Boolean guifg=' s:colors.constant
 exe 'hi! String guifg=' s:colors.string
-"exe 'hi! Character guibg=' s:palette.test
-exe 'hi! Noise guifg=' s:palette.red 'gui=bold'
+""exe 'hi! Character guibg=' s:palette.test
+exe 'hi! Noise guifg=' s:colors.noise 'gui=bold'
 
 exe 'hi! Include guifg=' s:palette.test 'gui=bold,italic'
 exe 'hi! Function guifg=' s:colors.function
@@ -112,7 +113,7 @@ exe 'hi! javaScriptStringS guifg=' s:palette.red
 exe 'hi! javaScriptEmbed guifg=' s:palette.test 'gui=bold'
 exe 'hi! javaScriptStringT guifg=' s:palette.red
 exe 'hi! javaScriptSpecialCharacter guibg=' s:palette.test
-exe 'hi! javaScriptNumber guifg=' s:palette.red
+exe 'hi! javaScriptNumber guifg=' s:colors.constant
 exe 'hi! javaScriptRegexpString guifg=' s:palette.test
 exe 'hi! javaScriptConditional guifg=' s:colors.keyword
 exe 'hi! javaScriptRepeat guifg=' s:palette.test 'gui=bold,italic' 
@@ -162,28 +163,28 @@ exe 'hi! tsxString guifg=' s:colors.string
 exe 'hi! tsxComment guibg=' s:palette.test
 exe 'hi! tsxColon guibg=' s:palette.test
 exe 'hi! tsxIfOperator guifg=' s:palette.test 'gui=bold'
-exe 'hi! tsxElseOperator guifg=' s:palette.test 'gui=bold'
+exe 'hi! tsxElseOperator guifg=' s:colors.noise 'gui=bold'
 exe 'hi! tsxAttributeBraces guifg=' s:colors.function 'gui=bold'
 exe 'hi! tsxJsBlock guifg=' s:palette.dark_orange
 exe 'hi! tsxAttributeComment guibg=' s:palette.test
 exe 'hi! tsxGenerics guibg=' s:palette.test
 exe 'hi! tsxTypeBraces guibg=' s:palette.test
 exe 'hi! tsxTypes guifg=' s:palette.test 'gui=bold'
-exe 'hi! tsGenerics guifg=' s:palette.red
+exe 'hi! tsGenerics guifg=' s:palette.test
 exe 'hi! tsxAttribPunct guibg=' s:palette.test
 exe 'hi! tsxAttribHook guibg=' s:palette.test
-exe 'hi! tsxNotOperator guifg=' s:palette.red 'gui=bold'
+exe 'hi! tsxNotOperator guifg=' s:colors.constant 'gui=bold'
 exe 'hi! tsxRegionEnd guibg=' s:palette.test
 exe 'hi! ReactLifeCycleMethods guifg=' s:colors.function
-exe 'hi! ReduxKeywords guifg=' s:palette.blue 'gui=bold'
+exe 'hi! ReduxKeywords guifg=' s:colors.function 'gui=bold'
 exe 'hi! ReduxHooksKeywords guifg=' s:colors.function
 
 " Typescript
 exe 'hi! typescriptBraces guifg=' s:colors.noise 'gui=bold'
 exe 'hi! typescriptReserved guifg=' s:colors.keyword
-exe 'hi! typescriptLabel guifg=' s:palette.dark_orange 'gui=bold,italic'
+exe 'hi! typescriptLabel guifg=' s:colors.keyword
 exe 'hi! typescriptParens guifg=' s:colors.noise 'gui=bold'
-exe 'hi! typescriptNumber guifg=' s:colors.number
+exe 'hi! typescriptNumber guifg=' s:colors.constant
 
 " HTML
 exe 'hi! htmlError guibg=' s:palette.test
@@ -223,26 +224,29 @@ exe 'hi! GitGutterDelete guifg=' s:palette.red 'gui=bold'
 exe 'hi! GitGutterChangeDelete guifg=' s:palette.dark_orange 'gui=bold'
 
 " NERDtree
-exe 'hi! NERDTreeOpenable guifg=' s:palette.blue
-exe 'hi! NERDTreeClosable guifg=' s:palette.red
-exe 'hi! NERDTreeUp guifg=' s:palette.dark_green 'gui=bold,italic'
-exe 'hi! NERDTreeDir guifg=' s:palette.blue 'gui=bold'
-exe 'hi! NERDTreeFile guifg=' s:palette.light_gray_2
-exe 'hi! NERDTreeDirSlash guifg=' s:palette.light_gray_2 'gui=bold'
-exe 'hi! NERDTreeIgnore guifg=' s:palette.blue 'gui=bold'
-exe 'hi! NERDTreeHelpKey guifg=' s:palette.purple 'gui=bold,italic'
-exe 'hi! NERDTreeHelpTitle guifg=' s:palette.dark_green 'gui=bold,italic'
-exe 'hi! NERDTreeToggleOn guifg=' s:palette.dark_orange 'gui=bold'
-exe 'hi! NERDTreeToggleOff guifg=' s:palette.dark_orange 'gui=bold'
-exe 'hi! NERDTreeHelpCommand guifg=' s:palette.green
-exe 'hi! NERDTreeHelp guifg=' s:palette.blue
-exe 'hi! NERDTreeLinkTarget guifg=' s:palette.dark_green
-exe 'hi! NERDTreeLinkFile guifg=' s:palette.blue
+"exe 'hi! NERDTreeOpenable guifg=' s:palette.blue
+"exe 'hi! NERDTreeClosable guifg=' s:palette.red
+"exe 'hi! NERDTreeUp guifg=' s:palette.dark_green 'gui=bold,italic'
+"exe 'hi! NERDTreeDir guifg=' s:palette.blue 'gui=bold'
+"exe 'hi! NERDTreeFile guifg=' s:palette.light_gray_2
+"exe 'hi! NERDTreeDirSlash guifg=' s:palette.light_gray_2 'gui=bold'
+"exe 'hi! NERDTreeIgnore guifg=' s:palette.blue 'gui=bold'
+"exe 'hi! NERDTreeHelpKey guifg=' s:palette.purple 'gui=bold,italic'
+"exe 'hi! NERDTreeHelpTitle guifg=' s:palette.dark_green 'gui=bold,italic'
+"exe 'hi! NERDTreeToggleOn guifg=' s:palette.dark_orange 'gui=bold'
+"exe 'hi! NERDTreeToggleOff guifg=' s:palette.dark_orange 'gui=bold'
+"exe 'hi! NERDTreeHelpCommand guifg=' s:palette.green
+"exe 'hi! NERDTreeHelp guifg=' s:palette.blue
+"exe 'hi! NERDTreeLinkTarget guifg=' s:palette.dark_green
+"exe 'hi! NERDTreeLinkFile guifg=' s:palette.blue
+"exe 'hi! NERDTreeExecFile guifg=' s:palette.dark_green 'gui=bold'
+"exe 'hi! NERDTreeFlags guifg=' s:palette.blue
+"exe 'hi! NERDTreeCWD guifg=' s:palette.purple 'gui=bold,italic'
+
+
+
+"exe 'hi! NERDTreeLink guibg=' s:palette.blue
 "exe 'hi! NERDTreeLinkDir guibg=' s:palette.test
 "exe 'hi! NERDTreeNodeDelimiters guibg=' s:palette.test
 "exe 'hi! NERDTreeRO guibg=' s:palette.test
 "exe 'hi! NERDTreeBookmark guibg=' s:palette.test
-exe 'hi! NERDTreeExecFile guifg=' s:palette.dark_green 'gui=bold'
-"exe 'hi! NERDTreeLink guibg=' s:palette.blue
-exe 'hi! NERDTreeFlags guifg=' s:palette.blue
-exe 'hi! NERDTreeCWD guifg=' s:palette.purple 'gui=bold,italic'
