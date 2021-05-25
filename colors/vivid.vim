@@ -74,8 +74,9 @@ exe 'hi! EndOfBuffer guifg=' s:palette.dark_gray
 
 exe 'hi! Identifier guifg=' s:colors.noise
 exe 'hi! Statement guifg=' s:colors.keyword
-exe 'hi! Type guifg=' s:colors.statement
+exe 'hi! Type guifg=' s:colors.statement 'gui=none'
 exe 'hi! Special guifg=' s:colors.number
+exe 'hi! SpecialKey guifg=' s:palette.test 'guibg=' s:palette.test
 exe 'hi! Comment guifg=' s:palette.light_gray 'gui=italic'
 exe 'hi! Constant guifg=' s:colors.function
 exe 'hi! Number guifg=' s:colors.number
@@ -188,17 +189,17 @@ exe 'hi! typescriptNumber guifg=' s:colors.constant
 
 " HTML
 exe 'hi! htmlError guibg=' s:palette.test
-exe 'hi! htmlString guifg=' s:palette.dark_orange
+exe 'hi! htmlString guifg=' s:colors.string
 exe 'hi! htmlValue guibg=' s:palette.test
 exe 'hi! htmlTagN guifg=' s:palette.dark_orange
 exe 'hi! htmlTagError guibg=' s:palette.red  'guifg=' s:palette.white 'gui=underline'
 exe 'hi! htmlTitle guifg=' s:palette.light_gray_2 'gui=bold'
 exe 'hi! link htmlH1 htmlTitle'
-exe 'hi! htmlTagName guifg=' s:palette.red 'gui=bold,italic'
-exe 'hi! htmlTag guifg=' s:palette.red
-exe 'hi! htmlEndTag guifg=' s:palette.red
-exe 'hi! htmlArg guifg=' s:palette.dark_green 'gui=bold,italic'
-exe 'hi! htmlEvent guifg=' s:palette.dark_orange
+exe 'hi! htmlTagName guifg=' s:colors.function
+exe 'hi! htmlTag guifg=' s:colors.function
+exe 'hi! htmlEndTag guifg=' s:colors.function
+exe 'hi! htmlArg guifg=' s:colors.keyword
+exe 'hi! htmlEvent guifg=' s:colors.keyword
 exe 'hi! htmlLink guifg=' s:palette.light_gray_2 'gui=underline'
 exe 'hi! htmlSpecialTagName guifg=' s:palette.blue 'gui=bold,italic'
 exe 'hi! htmlBoldUnderline gui=bold,underline'
