@@ -8,6 +8,7 @@ let s:palette.test = '#ff0000'
 
 let s:palette.bg = "#000000"
 
+let s:colors.test = "#ff0000"
 let s:colors.function = "#28A9FF"
 let s:colors.keyword = "#FFB638"
 let s:colors.string = "#42DD76"
@@ -186,6 +187,38 @@ exe 'hi! typescriptReserved guifg=' s:colors.keyword
 exe 'hi! typescriptLabel guifg=' s:colors.keyword
 exe 'hi! typescriptParens guifg=' s:colors.noise 'gui=bold'
 exe 'hi! typescriptNumber guifg=' s:colors.constant
+
+" JSX
+"exe 'hi! jsxRegion
+"exe 'hi! javaScriptBlock
+"exe 'hi! jsxElement guifg=' s:colors.test
+exe 'hi! jsxOpenPunct guifg=' s:colors.function
+exe 'hi! jsxOpenTag guifg=' s:colors.test
+exe 'hi! jsxAttrib guifg=' s:colors.keyword
+exe 'hi! jsxExpressionBlock guifg=' s:colors.variable
+exe 'hi! jsxSpreadOperator guifg=' s:colors.test
+"exe 'hi! typescriptLineComment
+"exe 'hi! typescriptComment
+exe 'hi! jsxCloseString guifg=' s:colors.function
+exe 'hi! jsxTag guifg=' s:colors.test
+"exe 'hi! jsxComment
+"exe 'hi! jsxCloseTag
+exe 'hi! jsxTagName guifg=' s:colors.function
+"exe 'hi! jsxBraces
+"exe 'hi! javascriptSpreadOp
+"exe 'hi! typescriptObjectSpread
+"exe 'hi! jsxDot
+"exe 'hi! jsxNamespace
+"exe 'hi! jsxString
+exe 'hi! jsxEqual guifg=' s:colors.noise
+"exe 'hi! jsxClosePunct
+"exe 'hi! jsxAttribKeyword
+exe 'hi! jsxComponentName guifg=' s:colors.function 'gui=bold'
+"exe 'hi! jsTemplateStringTag
+"exe 'hi! javascriptTagRef
+"exe 'hi! jsxTaggedRegion
+"exe 'hi! jsxBackticks
+"exe 'hi! jsxPunct
 
 " HTML
 exe 'hi! htmlError guibg=' s:palette.test
